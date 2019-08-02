@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="aquamarine.css">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/another_assets/sigotora_js/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/another_assets/sigotora_js/slick.css">
   <!-- Script dependencies -->
   <script src="js/navbar-ontop.js"></script>
   <script src="js/animate-in.js"></script>
@@ -16,17 +18,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="https://www.olp.co.jp/another_assets/sigotora_js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.center').slick({
+        infinite: true, //スライドのループ有効化
+        dots: false, //ドットのナビゲーションを表示
+        centerMode: true, //要素を中央寄せ
+        centerPadding: '5%', //両サイドの見えている部分のサイズ
+        autoplay: true, //自動再生
+        arrows: false,
+      });
+    });
+  </script>
 </head>
 
 <body>
   <div class="">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <p class="small text-muted">オープンループパートナーズ・日払い・未経験歓迎の求人情報【しごとら】</p>
+        <div class="col-md-6 col-lg-6 col-sm-12 col-12">
+          <p class="small text-muted my-0">オープンループパートナーズ・日払い・未経験歓迎の求人情報【しごとら】</p>
         </div>
-        <div class="col-md-6">
-          <ul class="list-inline small">
+        <div class="col-md-6 col-lg-6 col-12 col-sm-12">
+          <ul class="list-inline small my-0">
             <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=1"><u>北海道</u></a></li>
             <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=2"><u>東北</u></a></li>
             <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=3"><u>関東</u></a></li>
@@ -41,6 +56,27 @@
       </div>
     </div>
   </div>
+  <div class="py-1 border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-6"><img class="d-block float-left" src="assets/img/sigotora/logo.png" height="60px"></div>
+        <div class="col-md-8 text-right col-6 col-sm-6"><a class="btn btn-outline-primary my-1" href="#">スタッフマイページ</a></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" style="padding-right: 0px; padding-left: 0px;">
+          <div class="center">
+            <div><img src="https://sigotora.jp/img_sys/1/mainimg/516ED734A5811F7D4E759D6E76901EBC4600790C.jpg" alt=""></div>
+            <div><a href="https://www.olp.co.jp/lp/2019sapporo0830/" target="_blank"><img src="https://sigotora.jp/img_sys/1/mainimg/95E24E60F289690EEA7BCE9C9A87287F09787258.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 
 </html>
