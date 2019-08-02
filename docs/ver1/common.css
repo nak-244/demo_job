@@ -73,3 +73,14 @@
     width: 100%;
     z-index: 10000;
 }
+
+/* グローバルメニュー リンク色変更 */
+#globalNavi a:link {
+    color: #000000 ;
+}
+#globalNavi a:visited {
+    color: #000000 ;
+}
+#globalNavi a:hover {
+    color: #F00038 ;
+}
