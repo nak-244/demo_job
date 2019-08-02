@@ -23,11 +23,11 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #12bbad,
-  secondary: #4f70ce,
+  primary: #00AEEF,
+  secondary: #F00038,
   light: #f3f3f3,
   dark: #151515,
-  info: #ccc,
+  info: #E7EBF2,
   success: #28a745,
   warning: #ffc107,
   danger: #dc3545
@@ -36,13 +36,13 @@ $theme-colors: (
 $body-bg: white;
 $body-color: #333;
 $body-color-inverse: invert($body-color) !default;
-$link-color: #12bbad;
+$link-color: #00AEEF;
 
 // Fonts
 $font-family-base: Roboto;
 $display-font-family: Roboto;
 $lead-font-size:   1.30rem;
-$font-size-base:  1rem;
+$font-size-base:  1.1rem;
 $font-weight-light: 300;
 $font-weight-normal: 200;
 $font-weight-bold: 700;
