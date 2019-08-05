@@ -84,3 +84,27 @@
 #globalNavi a:hover {
     color: #F00038 ;
 }
+/* フルスクリーンMENU */
+#gloval-nav {
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+    text-align: center;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+}
+.open #gloval-nav {
+    visibility: visible;
+    opacity: 1;
+}
