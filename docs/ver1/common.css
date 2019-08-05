@@ -110,7 +110,7 @@
     width: 100%;
 }
 .gnav__menu__item{
-    margin: 40px 0;
+    /* margin: 40px 0; */
 }
 .gnav__menu__item a{
     color: #fff;
@@ -120,5 +120,13 @@
     transition: .5s;
 }
 .gnav__menu__item a:hover{
+    color: #666;
+}
+.gnavi a{
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+.gnavi a:hover{
     color: #666;
 }
