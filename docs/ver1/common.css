@@ -31,41 +31,6 @@
   }
 }
 
-/* slick */
-.center img {
-  width: 100%;
-  height: auto;
-}
-
-.center .slick-next {
-  right: 20px;
-  z-index: 99;
-}
-
-.center .slick-prev {
-  left: 15px;
-  z-index: 100;
-}
-
-.slick-slide {
-  transition: .3s ease;
-  transform: scale(.85);
-  transform-origin: 110% 50%;
-  filter: blur(7px);
-}
-
-.slick-current {
-  position: relative;
-  z-index: 2;
-  transform: scale(1);
-  transform-origin: 50% 50%;
-  filter: blur(0);
-}
-
-.slick-current+.slick-slide {
-  transform-origin: -10% 50%;
-}
-
 /* グローバルメニューを上で止める */
 .fixed {
     position: fixed;
@@ -149,8 +114,7 @@
 }
 .gnav__menu__item a{
     color: #fff;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.2em;
     padding: 40px;
     text-decoration: none;
     transition: .5s;
