@@ -79,14 +79,48 @@
           <ul class="list-inline mb-0 text-right">
             <li class="list-inline-item text-center small">&nbsp;</li>
             <li class="list-inline-item text-center small"><a class="nav-link" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank"><i class="fa d-inline fa-user-circle fa-2x"></i><br>マイページ</a></li>
-            <li class="list-inline-item text-center small"><a class="nav-link" href="#"><i class="fa d-inline fa-bars fa-2x"></i><br>メニュー</a></li>
+            <li class="list-inline-item text-center small"><a class="menu">
+                <span class="menu__line menu__line--top"></span>
+                <span class="menu__line menu__line--center"></span>
+                <span class="menu__line menu__line--bottom"></span>
+              </a><br>メニュー</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <!-- globalMENU -->
-  <!-- ///globalMENU -->
+  <!-- sp用メニュー -->
+  <a class="spmenu sp">
+    <span class="menu__line menu__line--top"></span>
+    <span class="menu__line menu__line--center"></span>
+    <span class="menu__line menu__line--bottom"></span>
+  </a>
+  <!-- //sp用メニュー -->
+  <!-- フルスクリーンメニュー -->
+  <nav class="gnav">
+    <div class="gnav__wrap">
+      <ul class="gnav__menu">
+        <li class="gnav__menu__item"><a href="">About</a></li>
+        <li class="gnav__menu__item"><a href="">Works</a></li>
+        <li class="gnav__menu__item"><a href="">Recruit</a></li>
+        <li class="gnav__menu__item"><a href="">News</a></li>
+        <li class="gnav__menu__item"><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- //フルスクリーンメニュー -->
+  <!-- globalMENU スクリプト -->
+  <script type="text/javascript">
+    $('.menu').on('click', function() {
+      $('.menu__line').toggleClass('active');
+      $('.gnav').fadeToggle();
+    });
+    $('.spmenu').on('click', function() {
+      $('.menu__line').toggleClass('active');
+      $('.gnav').fadeToggle();
+    });
+  </script>
+  <!-- ///globalMENU スクリプト -->
   <!-- 検索用スクリプト -->
   <script type="text/javascript">
     $(function() {
@@ -100,6 +134,202 @@
     });
   </script>
   <!-- 検索用スクリプト ここまで -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">勤務エリアを選ぶ</p><select id="srh_ken_param" class="custom-select">
+            <option value="">---</option>
+            <option value="1">北海道</option>
+            <option value="2">青森県</option>
+            <option value="3">岩手県</option>
+            <option value="4">宮城県</option>
+            <option value="5">秋田県</option>
+            <option value="6">山形県</option>
+            <option value="7">福島県</option>
+            <option value="8">茨城県</option>
+            <option value="9">栃木県</option>
+            <option value="10">群馬県</option>
+            <option value="11">埼玉県</option>
+            <option value="12">千葉県</option>
+            <option value="13">東京都</option>
+            <option value="14">神奈川県</option>
+            <option value="15">新潟県</option>
+            <option value="16">富山県</option>
+            <option value="17">石川県</option>
+            <option value="18">福井県</option>
+            <option value="19">山梨県</option>
+            <option value="20">長野県</option>
+            <option value="21">岐阜県</option>
+            <option value="22">静岡県</option>
+            <option value="23">愛知県</option>
+            <option value="24">三重県</option>
+            <option value="25">滋賀県</option>
+            <option value="26">京都府</option>
+            <option value="27">大阪府</option>
+            <option value="28">兵庫県</option>
+            <option value="29">奈良県</option>
+            <option value="30">和歌山県</option>
+            <option value="31">鳥取県</option>
+            <option value="32">島根県</option>
+            <option value="33">岡山県</option>
+            <option value="34">広島県</option>
+            <option value="35">山口県</option>
+            <option value="36">徳島県</option>
+            <option value="37">香川県</option>
+            <option value="38">愛媛県</option>
+            <option value="39">高知県</option>
+            <option value="40">福岡県</option>
+            <option value="41">佐賀県</option>
+            <option value="42">長崎県</option>
+            <option value="43">熊本県</option>
+            <option value="44">大分県</option>
+            <option value="45">宮崎県</option>
+            <option value="46">鹿児島県</option>
+            <option value="47">沖縄県</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">職種を選ぶ</p>
+          <select id="srh_jobtype_param" class="custom-select">
+            <option value="">---</option>
+            <option value="1">オフィス事務</option>
+            <option value="2">営業</option>
+            <option value="3">IT・エンジニア</option>
+            <option value="4">WEB・クリエイター</option>
+            <option value="5">販売</option>
+            <option value="6">イベント</option>
+            <option value="7">接客・サービス</option>
+            <option value="8">飲食・フード</option>
+            <option value="9">軽作業</option>
+            <option value="10">製造</option>
+            <option value="11">配送・ドライバー</option>
+            <option value="12">医療・介護・福祉・保育・栄養士</option>
+            <option value="13">講師・インストラクター</option>
+            <option value="14">美容・ヘルスケア</option>
+            <option value="15">農業・酪農</option>
+            <option value="16">漁業・水産</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-12 my-3">
+          <p class="lead text-left">キーワード</p>
+          <ul class="list-inline text-left text-muted mb-0 small">
+            <li class="list-inline-item">日払い</li>
+            <li class="list-inline-item">未経験歓迎</li>
+            <li class="list-inline-item">服装自由</li>
+            <li class="list-inline-item">オープニングスタッフ</li>
+          </ul><input type="text" class="form-control" id="sfw">
+        </div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse"><a class="btn btn-primary" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">求人検索</a></div>
+      </div>
+      <div class="row mt-5">
+        <div class="my-3 col-md-12">
+          <p class="text-center"><a href="https://www.olp.co.jp/agent/" target="_blank"><u><i class="fa fa-fw fa-check"></i>正社員で転職をご希望の方</u></a>&nbsp;ー&nbsp;コンサルタントがあなたの転職を1対1でサポートします。</p>
+          <p class="text-center"><a href="https://www.olp.co.jp/medical/" target="_blank"><u><i class="fa fa-fw fa-check"></i>資格を活かして働きたい方</u></a>&nbsp;ー&nbsp;介護・看護・保育・調理師など、メディカル系に特化した求人情報はこちらです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">勤務エリアを選ぶ</p><select id="srh_ken_param" class="custom-select">
+            <option value="">---</option>
+            <option value="1">北海道</option>
+            <option value="2">青森県</option>
+            <option value="3">岩手県</option>
+            <option value="4">宮城県</option>
+            <option value="5">秋田県</option>
+            <option value="6">山形県</option>
+            <option value="7">福島県</option>
+            <option value="8">茨城県</option>
+            <option value="9">栃木県</option>
+            <option value="10">群馬県</option>
+            <option value="11">埼玉県</option>
+            <option value="12">千葉県</option>
+            <option value="13">東京都</option>
+            <option value="14">神奈川県</option>
+            <option value="15">新潟県</option>
+            <option value="16">富山県</option>
+            <option value="17">石川県</option>
+            <option value="18">福井県</option>
+            <option value="19">山梨県</option>
+            <option value="20">長野県</option>
+            <option value="21">岐阜県</option>
+            <option value="22">静岡県</option>
+            <option value="23">愛知県</option>
+            <option value="24">三重県</option>
+            <option value="25">滋賀県</option>
+            <option value="26">京都府</option>
+            <option value="27">大阪府</option>
+            <option value="28">兵庫県</option>
+            <option value="29">奈良県</option>
+            <option value="30">和歌山県</option>
+            <option value="31">鳥取県</option>
+            <option value="32">島根県</option>
+            <option value="33">岡山県</option>
+            <option value="34">広島県</option>
+            <option value="35">山口県</option>
+            <option value="36">徳島県</option>
+            <option value="37">香川県</option>
+            <option value="38">愛媛県</option>
+            <option value="39">高知県</option>
+            <option value="40">福岡県</option>
+            <option value="41">佐賀県</option>
+            <option value="42">長崎県</option>
+            <option value="43">熊本県</option>
+            <option value="44">大分県</option>
+            <option value="45">宮崎県</option>
+            <option value="46">鹿児島県</option>
+            <option value="47">沖縄県</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">職種を選ぶ</p>
+          <select id="srh_jobtype_param" class="custom-select">
+            <option value="">---</option>
+            <option value="1">オフィス事務</option>
+            <option value="2">営業</option>
+            <option value="3">IT・エンジニア</option>
+            <option value="4">WEB・クリエイター</option>
+            <option value="5">販売</option>
+            <option value="6">イベント</option>
+            <option value="7">接客・サービス</option>
+            <option value="8">飲食・フード</option>
+            <option value="9">軽作業</option>
+            <option value="10">製造</option>
+            <option value="11">配送・ドライバー</option>
+            <option value="12">医療・介護・福祉・保育・栄養士</option>
+            <option value="13">講師・インストラクター</option>
+            <option value="14">美容・ヘルスケア</option>
+            <option value="15">農業・酪農</option>
+            <option value="16">漁業・水産</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-sm-12 my-3">
+          <p class="lead text-left">キーワード</p>
+          <ul class="list-inline text-left text-muted mb-0 small">
+            <li class="list-inline-item">日払い</li>
+            <li class="list-inline-item">未経験歓迎</li>
+            <li class="list-inline-item">服装自由</li>
+            <li class="list-inline-item">オープニングスタッフ</li>
+          </ul><input type="text" class="form-control" id="sfw">
+        </div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse"><a class="btn btn-primary" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">求人検索</a></div>
+      </div>
+      <div class="row mt-5">
+        <div class="my-3 col-md-12">
+          <p class="text-center"><a href="https://www.olp.co.jp/agent/" target="_blank"><u><i class="fa fa-fw fa-check"></i>正社員で転職をご希望の方</u></a>&nbsp;ー&nbsp;コンサルタントがあなたの転職を1対1でサポートします。</p>
+          <p class="text-center"><a href="https://www.olp.co.jp/medical/" target="_blank"><u><i class="fa fa-fw fa-check"></i>資格を活かして働きたい方</u></a>&nbsp;ー&nbsp;介護・看護・保育・調理師など、メディカル系に特化した求人情報はこちらです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5">
     <div class="container">
       <div class="row">
