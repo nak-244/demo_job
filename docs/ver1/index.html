@@ -28,9 +28,23 @@
       });
     });
   </script>
+  <!-- 検索用スクリプト -->
+  <script type="text/javascript">
+    $(function() {
+      var href = "https://sigotora.jp/index.cfm";
+      $('#srh_ken_param,#srh_jobtype_param,#sfw').on('change', function() {
+        var srh_ken_param = $('#srh_ken_param').val();
+        var srh_jobtype_param = $('#srh_jobtype_param').val();
+        var sfw = $('#sfw').val();
+        $('#test').prop('href', href + "?fuseaction=job.joblist&srh_ken_param=" + srh_ken_param + "&srh_jobtype_param=" + srh_jobtype_param + "&sfw=" + sfw);
+      });
+    });
+  </script>
+  <!-- 検索用スクリプト ここまで -->
 </head>
 
 <body>
+  <!-- PC用ヘッダー -->
   <div class="border-bottom pc">
     <div class="container">
       <div class="row">
@@ -53,9 +67,10 @@
       </div>
     </div>
   </div>
-  <div class="py-1 bg-white border-bottom" id="globalNavi">
-    <!-- pc用グローバルメニュー -->
-    <div class="pc container">
+  <!-- //PC用ヘッダー -->
+  <!-- PC用常時表示MENU -->
+  <div class="py-1 bg-white border-bottom pc" id="globalNavi">
+    <div class="container">
       <div class="row">
         <div class="col-md-5">
           <ul class="list-inline mb-0 text-left ">
@@ -69,92 +84,45 @@
           <ul class="list-inline mb-0 text-right">
             <li class="list-inline-item text-center small">&nbsp;</li>
             <li class="list-inline-item text-center small"><a class="nav-link" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank"><i class="fa d-inline fa-user-circle fa-2x"></i><br>マイページ</a></li>
-            <li class="list-inline-item text-center small"><a class="menu">
-                <span class="menu__line menu__line--top"></span>
-                <span class="menu__line menu__line--center"></span>
-                <span class="menu__line menu__line--bottom"></span>
-              </a><br>メニュー</li>
+            <li class="list-inline-item text-center small"><a class="nav-link" href=""><i class="fa d-inline fa-2x fa-bars"></i><br>メニュー</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <!-- //pc用グローバルメニュー -->
-    <!-- sp用グローバルメニュー -->
-    <div class="sp container">
-      <div class="row">
-        <div class="col-4"><img class="img-fluid d-block mx-auto" src="assets/img/sigotora/logo.png"></div>
-        <div class="col-8">
-          <ul class="list-inline mb-0 text-right">
-            <li class="list-inline-item text-center small">&nbsp;</li>
-            <li class="list-inline-item text-center small"><a class="nav-link" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank"><i class="fa d-inline fa-user-circle fa-2x"></i><br>マイページ</a></li>
-            <li class="list-inline-item text-center small"><a class="menu">
-                <span class="menu__line menu__line--top"></span>
-                <span class="menu__line menu__line--center"></span>
-                <span class="menu__line menu__line--bottom"></span>
-              </a><br>メニュー</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- //sp用グローバルメニュー -->
   </div>
-  <!-- フルスクリーンメニュー -->
-  <nav class="gnav">
-    <div class="gnav__wrap">
-      <ul class="gnav__menu">
-        <li class="gnav__menu__item pt-4"><a href="https://sigotora.jp/">HOME</a></li>
-        <li class="gnav__menu__item pt-4"><a href="https://sigotora.jp/index.cfm?fuseaction=job.srchform">仕事を探す</a></li>
-        <li class="gnav__menu__item pt-4"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216">支店一覧</a></li>
-        <ul class="list-inline text-white py-2">
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#hokkaido">北海道エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#tohoku">東北エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#kanto">関東エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#hokuriku">北陸・甲信越エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#tokai">東海エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#kansai">関西エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#csyugoku">中国・四国エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#kyusyu">九州エリア</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216#okinawa">沖縄エリア</a></li>
-        </ul>
-        <li class="gnav__menu__item pt-4"><a href="">特集</a></li>
-        <ul class="list-inline text-white py-2">
-          <li class="list-inline-item pl-2 gnavi"><a href="https://www.olp.co.jp/lp/2019senior/">シニアのお仕事探しを応援します</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://www.olp.co.jp/medical/">介護士・看護師の求人情報</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://www.olp.co.jp/agent/">正社員の転職エージェントサービス</a></li>
-        </ul>
-        <ul class="list-inline text-white py-2">
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=223">コールセンターで働く</a></li>
-          <li class="list-inline-item pl-2 gnavi"><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=225">製造業で働く</a></li>
-        </ul>
-      </ul>
+  <!-- //PC用常時表示MENU -->
+  <!-- SP用ヘッダー -->
+  <div class="border-bottom sp">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid d-block mx-auto" src="assets/img/sigotora/logo.png">
+        </div>
+      </div>
     </div>
-  </nav>
-  <!-- //フルスクリーンメニュー -->
-  <!-- globalMENU スクリプト -->
-  <script type="text/javascript">
-    $('.menu').on('click', function() {
-      $('.menu__line').toggleClass('active');
-      $('.gnav').fadeToggle();
-    });
-    $('.spmenu').on('click', function() {
-      $('.menu__line').toggleClass('active');
-      $('.gnav').fadeToggle();
-    });
-  </script>
-  <!-- ///globalMENU スクリプト -->
-  <!-- 検索用スクリプト -->
-  <script type="text/javascript">
-    $(function() {
-      var href = "https://sigotora.jp/index.cfm";
-      $('#srh_ken_param,#srh_jobtype_param,#sfw').on('change', function() {
-        var srh_ken_param = $('#srh_ken_param').val();
-        var srh_jobtype_param = $('#srh_jobtype_param').val();
-        var sfw = $('#sfw').val();
-        $('#test').prop('href', href + "?fuseaction=job.joblist&srh_ken_param=" + srh_ken_param + "&srh_jobtype_param=" + srh_jobtype_param + "&sfw=" + sfw);
-      });
-    });
-  </script>
-  <!-- 検索用スクリプト ここまで -->
+  </div>
+  <!-- //SP用ヘッダー -->
+  <!-- SP用常時表示MENU -->
+  <div class="py-1 bg-white border-bottom sp" id="globalNavi">
+    <div class="container px-0">
+      <div class="row small text-center">
+        <div class="col-9">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item text-center small m-0"> <a class="nav-link p-1" href="https://sigotora.jp/"><i class="fa d-inline fa-home fa-2x"></i><br>HOME</a> </li>
+            <li class="list-inline-item text-center small m-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=job.srchform"><i class="fa d-inline fa-search fa-2x"></i><br>仕事検索</a></li>
+            <li class="list-inline-item text-center small m-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216"><i class="fa d-inline fa-building fa-2x"></i><br>支店一覧</a></li>
+            <li class="list-inline-item text-center small m-0"><a class="nav-link p-1" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank"><i class="fa d-inline fa-user-circle fa-2x"></i><br>マイページ</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item text-center small m-0 border-left"><a class="nav-link p-1" href=""><i class="fa d-inline fa-2x fa-bars"></i><br>メニュー</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //SP用常時表示MENU -->
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -373,6 +341,7 @@
       </div>
     </div>
   </div>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
