@@ -115,7 +115,7 @@
 .gnav__menu__item a{
     color: #fff;
     font-size: 1.2em;
-    padding: 40px;
+    padding: 0px;
     text-decoration: none;
     transition: .5s;
 }
