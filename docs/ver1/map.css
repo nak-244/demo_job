@@ -1,24 +1,56 @@
-@font-face {
-  src: url("/_codetest/iconfont-for-map/assets/font/map.eot?z09ns2");
-  src: url("/_codetest/iconfont-for-map/assets/font/map.eot?z09ns2#iefix") format("embedded-opentype"), url("/_codetest/iconfont-for-map/assets/font/map.ttf?z09ns2") format("truetype"), url("/_codetest/iconfont-for-map/assets/font/map.woff?z09ns2") format("woff"), url("/_codetest/iconfont-for-map/assets/font/map.svg?z09ns2#map") format("svg");
-  font-family: 'map';
-  font-style: normal;
-  font-weight: normal
+/* 日本地図
+------------------------------ */
+.p-eveMap {
+  position: relative;
+  width: 100%;
+  padding-top: 55%;
+}
+.p-eveMap>ul {
+  margin:0;
+  margin-bottom:0;
+  padding-left:0;
+  list-style:none;
+}
+.p-eveMap>ul>li {
+  width: 100%;
+  user-select: none;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  cursor: default;
+  font-size: 95vw;
+  line-height: .55;
+  left: -30px;
 }
 
-[class^="p-eveMap"], [class*=" p-eveMap"] {
+@font-face {
+font-family: 'map';
+src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.eot');
+src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.eot#iefix') format('embedded-opentype'),
+  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.ttf') format('truetype'),
+  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.woff') format('woff'),
+  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.svg#map') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.p-eveMap>ul>li[class^="p-eveMap"],
+.p-eveMap>ul>li[class*=" p-eveMap"] {
+  font-family: 'map' !important;
   speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: text-top;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
-  right: 0;
   left: 0;
-  font-family: 'map' !important;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  text-transform: none;
-  vertical-align: text-top
+  right: 0;
 }
 
 .p-eveMapLine:before {
@@ -286,100 +318,12 @@
   content: "\e920"
 }
 
-.p-eveMv {
-  z-index: -1;
-  position: relative;
-  margin: 1rem 0 1.6rem;
-  padding: 2em 1em;
-  border-radius: 10px;
-  background: #fff
-}
-
-.p-eveMap {
-  position: relative;
-  width: 100%;
-  padding-top: 55%
-}
-
-.p-eveMap>ul {
-  margin: 0;
-  margin-bottom: 0;
-  padding-left: 1.5em;
-  padding-left: 0;
-  list-style: none
-}
-
-.p-eveMap>ul>li {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: absolute;
-  top: 5%;
-  right: 0;
-  bottom: 0;
-  left: -30px;
-  width: 100%;
-  margin: auto;
-  font-size: 95vw;
-  line-height: .55;
-  text-align: center;
-  cursor: default;
-  user-select: none
-}
-
-.p-eveList {
-  margin: 0;
-  margin-bottom: 3rem;
-  padding-left: 1.5em;
-  padding-left: 0;
-  list-style: none
-}
-
-.p-eveList>li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd
-}
-
-.p-eveList>li>p {
-  margin: .5rem 0
-}
-
-.p-eveList>li>p.p-eveList__pref {
-  font-weight: bold
-}
-
-@media only screen and (min-width: 480px) {
-  body {
-    font-size: 16px;
-    font-size: 1.06667rem
+@media screen and (min-width: 768px){
+  .p-eveMap{
+    padding-top:380px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .p-eveMap {
-    padding-top: 380px
-  }
-  .p-eveMap>ul>li {
-    left: 0;
-    font-size: 720px
-  }
-  .p-eveList>li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 1rem;
-    padding-left: 1rem
-  }
-  .p-eveList>li>p {
-    margin-right: 2rem
-  }
-  .p-eveList>li>p.p-eveList__pref {
-    min-width: 5rem
-  }
-}
-
-@media (min-width: 930px) {
-  .l-container {
-    max-width: 900px
+  .p-eveMap>ul>li{
+    left:0;
+    font-size:720px;
   }
 }
