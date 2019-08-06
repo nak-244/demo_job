@@ -24,7 +24,8 @@ source内では一番下部に配置されるため、これを最優先で読�
 - another_assets/sigotora_js/fonts/map.ttf
 - another_assets/sigotora_js/fonts/map.woff
 
-cssファイル    @font-face {
+cssファイル
+    @font-face {
       src: url("/_codetest/iconfont-for-map/assets/font/map.eot?z09ns2");
       src: url("/_codetest/iconfont-for-map/assets/font/map.eot?z09ns2#iefix") format("embedded-opentype"), url("/_codetest/iconfont-for-map/assets/font/map.ttf?z09ns2") format("truetype"), url("/_codetest/iconfont-for-map/assets/font/map.woff?z09ns2") format("woff"), url("/_codetest/iconfont-for-map/assets/font/map.svg?z09ns2#map") format("svg");
       font-family: 'map';
