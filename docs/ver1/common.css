@@ -231,6 +231,7 @@
 }
 
 .specialmenu:hover {
+  color: #F00038;
   filter: alpha(opacity=70);
   /* IE 6,7*/
   -ms-filter: "alpha(opacity=70)";
@@ -244,9 +245,10 @@
   /*IE*/
 }
 
+/* modalMENU リスト関係 */
 .check{
   line-height: 1.5;
-  padding: 0.3em 0;
+  padding: 0.2em 0;
   list-style-type: none!important;/*ポチ消す*/
 }
 
@@ -256,4 +258,12 @@
   position: absolute;
   left : 1.2em; /*左端からのアイコンまで*/
   color: #333333; /*アイコン色*/
+}
+
+.check a{
+  color: #333333;
+}
+
+.check a:hover{
+    color: #F00038;
 }
