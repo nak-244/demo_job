@@ -8,6 +8,7 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="aquamarine.css">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="map.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <!-- Script dependencies -->
   <script src="js/animate-in.js"></script>
@@ -41,6 +42,16 @@
     });
   </script>
   <!-- 検索用スクリプト ここまで -->
+  <script type="text/javascript">
+    $(function() {
+      $('.p-eveList>li').each(function() {
+        var $pref = $('.p-eveMap .p-eveMapPref--' + $(this).data('pref'));
+        if ($pref.not('is-active')) {
+          $pref.addClass('is-active');
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -349,6 +360,68 @@
       </div>
     </div>
   </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="my-3 col-md-12">
+          <div class="p-eveMv">
+            <div class="p-eveMap">
+              <ul>
+                <li class="p-eveMapPref--hokkaido"></li>
+                <li class="p-eveMapPref--aomori"></li>
+                <li class="p-eveMapPref--iwate"></li>
+                <li class="p-eveMapPref--akita"></li>
+                <li class="p-eveMapPref--yamagata"></li>
+                <li class="p-eveMapPref--miyagi"></li>
+                <li class="p-eveMapPref--fukushima"></li>
+                <li class="p-eveMapPref--ibaraki"></li>
+                <li class="p-eveMapPref--tochigi"></li>
+                <li class="p-eveMapPref--gumma"></li>
+                <li class="p-eveMapPref--saitama"></li>
+                <li class="p-eveMapPref--chiba"></li>
+                <li class="p-eveMapPref--tokyo"></li>
+                <li class="p-eveMapPref--tochigi"></li>
+                <li class="p-eveMapPref--kanagawa"></li>
+                <li class="p-eveMapPref--yamanashi"></li>
+                <li class="p-eveMapPref--nagano"></li>
+                <li class="p-eveMapPref--niigata"></li>
+                <li class="p-eveMapPref--toyama"></li>
+                <li class="p-eveMapPref--ishikawa"></li>
+                <li class="p-eveMapPref--fukui"></li>
+                <li class="p-eveMapPref--shizuoka"></li>
+                <li class="p-eveMapPref--aichi"></li>
+                <li class="p-eveMapPref--gifu"></li>
+                <li class="p-eveMapPref--mie"></li>
+                <li class="p-eveMapPref--shiga"></li>
+                <li class="p-eveMapPref--kyoto"></li>
+                <li class="p-eveMapPref--osaka"></li>
+                <li class="p-eveMapPref--hyogo"></li>
+                <li class="p-eveMapPref--nara"></li>
+                <li class="p-eveMapPref--wakayama"></li>
+                <li class="p-eveMapPref--tottori"></li>
+                <li class="p-eveMapPref--shimane"></li>
+                <li class="p-eveMapPref--okayama"></li>
+                <li class="p-eveMapPref--hiroshima"></li>
+                <li class="p-eveMapPref--yamaguchi"></li>
+                <li class="p-eveMapPref--kagawa"></li>
+                <li class="p-eveMapPref--ehime"></li>
+                <li class="p-eveMapPref--tokushima"></li>
+                <li class="p-eveMapPref--kochi"></li>
+                <li class="p-eveMapPref--fukuoka"></li>
+                <li class="p-eveMapPref--saga"></li>
+                <li class="p-eveMapPref--nagasaki"></li>
+                <li class="p-eveMapPref--kumamoto"></li>
+                <li class="p-eveMapPref--oita"></li>
+                <li class="p-eveMapPref--miyazaki"></li>
+                <li class="p-eveMapPref--kagoshima"></li>
+                <li class="p-eveMapPref--okinawa"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="pt-5 pb-5 pb-md-0 text-center text-white special" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)), url(assets/img/sigotora/top_call.jpg);	background-position: center center, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;">
     <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=223" class="border-top border-bottom"></a>
     <div class="container">
@@ -469,6 +542,7 @@
       </div>
     </div>
   </div>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>

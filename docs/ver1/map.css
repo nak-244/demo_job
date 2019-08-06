@@ -27,19 +27,33 @@
 }
 
 @font-face {
-font-family: 'map';
-src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.eot');
-src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.eot#iefix') format('embedded-opentype'),
-  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.ttf') format('truetype'),
-  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.woff') format('woff'),
-  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/map.svg#map') format('svg');
-font-weight: normal;
-font-style: normal;
+  font-family: 'icomoon';
+  src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/icomoon.eot?uicisb');
+  src:  url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/icomoon.eot?uicisb#iefix') format('embedded-opentype'),
+    url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/icomoon.ttf?uicisb') format('truetype'),
+    url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/icomoon.woff?uicisb') format('woff'),
+    url('https://www.olp.co.jp/another_assets/sigotora_js/fonts/icomoon.svg?uicisb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .p-eveMap>ul>li[class^="p-eveMap"],
 .p-eveMap>ul>li[class*=" p-eveMap"] {
-  font-family: 'map' !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -53,277 +67,147 @@ font-style: normal;
   right: 0;
 }
 
-.p-eveMapLine:before {
-  color: #ccc;
-  content: "\e900"
-}
-
-.p-eveMapPref--hokkaido {
-  color: #d5e8f7
-}
-
-.p-eveMapPref--hokkaido.is-open {
-  color: #1f87d6
-}
-
-.p-eveMapPref--hokkaido:before {
-  content: "\e90b"
-}
-
-.p-eveMapPref--aomori, .p-eveMapPref--iwate, .p-eveMapPref--akita, .p-eveMapPref--yamagata, .p-eveMapPref--miyagi, .p-eveMapPref--fukushima {
-  color: #d5edf5
-}
-
-.p-eveMapPref--aomori.is-open, .p-eveMapPref--iwate.is-open, .p-eveMapPref--akita.is-open, .p-eveMapPref--yamagata.is-open, .p-eveMapPref--miyagi.is-open, .p-eveMapPref--fukushima.is-open {
-  color: #24c0dc
-}
-
-.p-eveMapPref--aomori:before {
-  content: "\e903"
-}
-
-.p-eveMapPref--iwate:before {
-  content: "\e910"
-}
-
-.p-eveMapPref--akita:before {
-  content: "\e902"
-}
-
-.p-eveMapPref--miyagi:before {
-  content: "\e918"
-}
-
-.p-eveMapPref--yamagata:before {
-  content: "\e92d"
-}
-
-.p-eveMapPref--fukushima:before {
-  content: "\e90c"
-}
-
-.p-eveMapPref--ibaraki, .p-eveMapPref--tochigi, .p-eveMapPref--gumma, .p-eveMapPref--tokyo, .p-eveMapPref--saitama, .p-eveMapPref--chiba, .p-eveMapPref--kanagawa {
-  color: #d8ecdf
-}
-
-.p-eveMapPref--ibaraki.is-open, .p-eveMapPref--tochigi.is-open, .p-eveMapPref--gumma.is-open, .p-eveMapPref--tokyo.is-open, .p-eveMapPref--saitama.is-open, .p-eveMapPref--chiba.is-open, .p-eveMapPref--kanagawa.is-open {
-  color: #1ec180
-}
-
-.p-eveMapPref--ibaraki:before {
-  content: "\e90e"
-}
-
-.p-eveMapPref--tochigi:before {
-  content: "\e927"
-}
-
-.p-eveMapPref--gumma:before {
-  content: "\e909"
-}
-
-.p-eveMapPref--saitama:before {
-  content: "\e923"
-}
-
-.p-eveMapPref--chiba:before {
-  content: "\e904"
-}
-
-.p-eveMapPref--tokyo:before {
-  content: "\e929"
-}
-
-.p-eveMapPref--kanagawa:before {
-  content: "\e913"
-}
-
-.p-eveMapPref--yamanashi, .p-eveMapPref--nagano, .p-eveMapPref--niigata, .p-eveMapPref--toyama, .p-eveMapPref--ishikawa, .p-eveMapPref--fukui, .p-eveMapPref--shizuoka, .p-eveMapPref--aichi, .p-eveMapPref--gifu {
-  color: #eef9cc
-}
-
-.p-eveMapPref--yamanashi.is-open, .p-eveMapPref--nagano.is-open, .p-eveMapPref--niigata.is-open, .p-eveMapPref--toyama.is-open, .p-eveMapPref--ishikawa.is-open, .p-eveMapPref--fukui.is-open, .p-eveMapPref--shizuoka.is-open, .p-eveMapPref--aichi.is-open, .p-eveMapPref--gifu.is-open {
-  color: #b3de15
-}
-
-.p-eveMapPref--yamanashi:before {
-  content: "\e92f"
-}
-
-.p-eveMapPref--nagano:before {
-  content: "\e91a"
-}
-
-.p-eveMapPref--niigata:before {
-  content: "\e91d"
-}
-
-.p-eveMapPref--toyama:before {
-  content: "\e92b"
-}
-
-.p-eveMapPref--ishikawa:before {
-  content: "\e90f"
-}
-
-.p-eveMapPref--fukui:before {
-  content: "\e906"
-}
-
-.p-eveMapPref--shizuoka:before {
-  content: "\e926"
-}
-
-.p-eveMapPref--aichi:before {
-  content: "\e901"
-}
-
-.p-eveMapPref--gifu:before {
-  content: "\e908"
-}
-
-.p-eveMapPref--mie:before {
-  content: "\e917"
-}
-
-.p-eveMapPref--shiga, .p-eveMapPref--kyoto, .p-eveMapPref--osaka, .p-eveMapPref--hyogo, .p-eveMapPref--nara, .p-eveMapPref--wakayama, .p-eveMapPref--mie {
-  color: #fdf1bf
-}
-
-.p-eveMapPref--shiga.is-open, .p-eveMapPref--kyoto.is-open, .p-eveMapPref--osaka.is-open, .p-eveMapPref--hyogo.is-open, .p-eveMapPref--nara.is-open, .p-eveMapPref--wakayama.is-open, .p-eveMapPref--mie.is-open {
-  color: #ffdd55
-}
-
-.p-eveMapPref--shiga:before {
-  content: "\e924"
-}
-
-.p-eveMapPref--kyoto:before {
-  content: "\e916"
-}
-
-.p-eveMapPref--osaka:before {
-  content: "\e921"
-}
-
-.p-eveMapPref--hyogo:before {
-  content: "\e90d"
-}
-
-.p-eveMapPref--nara:before {
-  content: "\e91c"
-}
-
-.p-eveMapPref--wakayama:before {
-  content: "\e92c"
-}
-
-.p-eveMapPref--tottori, .p-eveMapPref--shimane, .p-eveMapPref--okayama, .p-eveMapPref--hiroshima, .p-eveMapPref--yamaguchi {
-  color: #fbecd9
-}
-
-.p-eveMapPref--tottori.is-open, .p-eveMapPref--shimane.is-open, .p-eveMapPref--okayama.is-open, .p-eveMapPref--hiroshima.is-open, .p-eveMapPref--yamaguchi.is-open {
-  color: #ff9e1f
-}
-
-.p-eveMapPref--tottori:before {
-  content: "\e92a"
-}
-
-.p-eveMapPref--shimane:before {
-  content: "\e925"
-}
-
-.p-eveMapPref--okayama:before {
-  content: "\e91f"
-}
-
-.p-eveMapPref--hiroshima:before {
-  content: "\e90a"
-}
-
-.p-eveMapPref--yamaguchi:before {
-  content: "\e92e"
-}
-
-.p-eveMapPref--kagawa, .p-eveMapPref--ehime, .p-eveMapPref--tokushima, .p-eveMapPref--kochi {
-  color: #fbe1e1
-}
-
-.p-eveMapPref--kagawa.is-open, .p-eveMapPref--ehime.is-open, .p-eveMapPref--tokushima.is-open, .p-eveMapPref--kochi.is-open {
-  color: #ff8e8e
-}
-
-.p-eveMapPref--kagawa:before {
-  content: "\e911"
-}
-
-.p-eveMapPref--ehime:before {
-  content: "\e905"
-}
-
-.p-eveMapPref--tokushima:before {
-  content: "\e928"
-}
-
-.p-eveMapPref--kochi:before {
-  content: "\e914"
-}
-
-.p-eveMapPref--okinawa {
-  color: #dcd3f3
-}
-
-.p-eveMapPref--okinawa.is-open {
-  color: #967ad6
-}
-
-.p-eveMapPref--fukuoka, .p-eveMapPref--saga, .p-eveMapPref--nagasaki, .p-eveMapPref--kumamoto, .p-eveMapPref--oita, .p-eveMapPref--miyazaki, .p-eveMapPref--kagoshima {
-  color: #fbdeef
-}
-
-.p-eveMapPref--fukuoka.is-open, .p-eveMapPref--saga.is-open, .p-eveMapPref--nagasaki.is-open, .p-eveMapPref--kumamoto.is-open, .p-eveMapPref--oita.is-open, .p-eveMapPref--miyazaki.is-open, .p-eveMapPref--kagoshima.is-open {
-  color: #d865a8
-}
-
-.p-eveMapPref--fukuoka:before {
-  content: "\e907"
-}
-
-.p-eveMapPref--saga:before {
-  content: "\e922"
-}
-
-.p-eveMapPref--nagasaki:before {
-  content: "\e91b"
-}
-
-.p-eveMapPref--kumamoto:before {
-  content: "\e915"
-}
-
-.p-eveMapPref--oita:before {
-  content: "\e91e"
-}
-
-.p-eveMapPref--miyazaki:before {
-  content: "\e919"
-}
-
-.p-eveMapPref--kagoshima:before {
-  content: "\e912"
-}
-
-.p-eveMapPref--okinawa:before {
-  content: "\e920"
-}
-
-@media screen and (min-width: 768px){
-  .p-eveMap{
-    padding-top:380px;
-  }
-  .p-eveMap>ul>li{
-    left:0;
-    font-size:720px;
-  }
+.icon-Line:before {
+  content: "\e900";
+}
+.icon-Pref--aichi:before {
+  content: "\e901";
+}
+.icon-Pref--akita:before {
+  content: "\e902";
+}
+.icon-Pref--aomori:before {
+  content: "\e903";
+}
+.icon-Pref--chiba:before {
+  content: "\e904";
+}
+.icon-Pref--ehime:before {
+  content: "\e905";
+}
+.icon-Pref--fukui:before {
+  content: "\e906";
+}
+.icon-Pref--fukuoka:before {
+  content: "\e907";
+}
+.icon-Pref--gifu:before {
+  content: "\e908";
+}
+.icon-Pref--gumma:before {
+  content: "\e909";
+}
+.icon-Pref--hiroshima:before {
+  content: "\e90a";
+}
+.icon-Pref--hokkaido:before {
+  content: "\e90b";
+}
+.icon-Pref--hukushima:before {
+  content: "\e90c";
+}
+.icon-Pref--hyogo:before {
+  content: "\e90d";
+}
+.icon-Pref--ibaraki:before {
+  content: "\e90e";
+}
+.icon-Pref--ishikawa:before {
+  content: "\e90f";
+}
+.icon-Pref--iwate:before {
+  content: "\e910";
+}
+.icon-Pref--kagawa:before {
+  content: "\e911";
+}
+.icon-Pref--kagoshima:before {
+  content: "\e912";
+}
+.icon-Pref--kanagawa:before {
+  content: "\e913";
+}
+.icon-Pref--kochi:before {
+  content: "\e914";
+}
+.icon-Pref--kumamoto:before {
+  content: "\e915";
+}
+.icon-Pref--kyoto:before {
+  content: "\e916";
+}
+.icon-Pref--mie:before {
+  content: "\e917";
+}
+.icon-Pref--miyagi:before {
+  content: "\e918";
+}
+.icon-Pref--miyazaki:before {
+  content: "\e919";
+}
+.icon-Pref--nagano:before {
+  content: "\e91a";
+}
+.icon-Pref--nagasaki:before {
+  content: "\e91b";
+}
+.icon-Pref--nara:before {
+  content: "\e91c";
+}
+.icon-Pref--niigata:before {
+  content: "\e91d";
+}
+.icon-Pref--oita:before {
+  content: "\e91e";
+}
+.icon-Pref--okayama:before {
+  content: "\e91f";
+}
+.icon-Pref--okinawa:before {
+  content: "\e920";
+}
+.icon-Pref--osaka:before {
+  content: "\e921";
+}
+.icon-Pref--saga:before {
+  content: "\e922";
+}
+.icon-Pref--saitama:before {
+  content: "\e923";
+}
+.icon-Pref--shiga:before {
+  content: "\e924";
+}
+.icon-Pref--shimane:before {
+  content: "\e925";
+}
+.icon-Pref--shizuoka:before {
+  content: "\e926";
+}
+.icon-Pref--tochigi:before {
+  content: "\e927";
+}
+.icon-Pref--tokushima:before {
+  content: "\e928";
+}
+.icon-Pref--tokyo:before {
+  content: "\e929";
+}
+.icon-Pref--tottori:before {
+  content: "\e92a";
+}
+.icon-Pref--toyama:before {
+  content: "\e92b";
+}
+.icon-Pref--wakayama:before {
+  content: "\e92c";
+}
+.icon-Pref--yamagata:before {
+  content: "\e92d";
+}
+.icon-Pref--yamaguchi:before {
+  content: "\e92e";
+}
+.icon-Pref--yamanashi:before {
+  content: "\e92f";
 }
