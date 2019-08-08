@@ -12,7 +12,7 @@
 <body>
   <!-- 地図 -->
   <script src="js/jquery.japan-map.js"></script>
-  <div id="map"></div>
+  <div id="japan-map-container"></div>
   <script type="text/javascript">
   $(function(){
 
@@ -29,7 +29,7 @@
           {code:10 , name:"沖縄地方", color:"#ea89c4", hoverColor:"#fdcae9", prefectures:[47]}
       ];
 
-      $("#map").japanMap(
+      $("#japan-map-container").japanMap(
           {
               areas  : areas,
               selection : "area",
