@@ -23,7 +23,7 @@
 
         options = $.extend({
             type                : "canvas",       // Only type of "canvas" exist now. Perhaps "svg" in future.
-            selection           : "prefecture",   // "prefecture" or "area"
+            selection           : "area",   // "prefecture" or "area"
             width               : null,           // Canvas will be scaled to larger one of "width" and "height".
             height              : null,
             color               : "#a0a0a0",      // Default color, which used if no color is set in "areas" object.
@@ -33,18 +33,18 @@
             borderLineWidth     : 0.25,
             lineColor           : "#a0a0a0",      // Border Line of the element and the partition line when "movesIsland" is true.
             lineWidth           : 1,
-            drawsBoxLine        : true,
-            showsPrefectureName : false,
+            drawsBoxLine        : false,
+            showsPrefectureName : true,
             prefectureNameType  : "full",
-            showsAreaName       : false,
+            showsAreaName       : true,
             areaNameType        : "full",
             areas               : definition_of_allJapan,
             prefectures         : definition_of_prefectures,
             movesIslands        : false,          //  Moves Nansei Islands (Okinawa and part of Kagishima) to the left-top space.
-            font                : "Arial",
-            fontSize            : null,
-            fontColor           : null,
-            fontShadowColor     : null,
+//            font                : "Arial",
+            fontSize            : 14,
+            fontColor           : "areaColor",
+            fontShadowColor     : "black",
             onSelect            : function(){},
             onHover             : function(){}
         }, options);
