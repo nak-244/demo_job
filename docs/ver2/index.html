@@ -360,15 +360,7 @@
   </div>
   <!-- //sp MODAL -->
   <!-- 地図 -->
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <iframe id="map" src="map.html?canvasWidth=800" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
+  <iframe id="map" src="map.html?canvasWidth=800" frameborder="0" scrolling="no"></iframe>
   <script> $(function(){
 
 		var $mapObj = $("#map");
@@ -382,6 +374,37 @@
 		});
 	});
 </script>
+  <style> body {
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  border:1px solid #666;
+}
+
+body #japan-map-container {
+  over-flow:hidden;
+  position:relative;
+  display:fixed;
+  z-index:100;
+}
+
+body #japan-map-container > canvas {
+  position:relative;
+  top:0px;
+  left:0px;
+  z-index: 101;
+}
+
+body #japan-map-back-btn {
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:100000;
+  display: none;
+}
+</style>
   <!-- //地図 -->
   <div class="py-5">
     <div class="container">
@@ -504,6 +527,7 @@
       </div>
     </div>
   </div>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
