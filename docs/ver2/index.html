@@ -8,7 +8,6 @@
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="aquamarine.css">
   <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="japanmap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <!-- Script dependencies -->
   <script src="js/animate-in.js"></script>
@@ -361,21 +360,7 @@
   </div>
   <!-- //sp MODAL -->
   <!-- 地図 -->
-  <iframe id="map" src="map.html?canvasWidth=800" frameborder="0" scrolling="no"></iframe>
-  <script>
-  	$(function(){
 
-  		var $mapObj = $("#map");
-  		$mapObj.on("load", function(){
-  			// iframe読み込み後、iframe内のcanvasのサイズを取得し、iframeのサイズを設定する
-  			var $iframeCanvas = $('iframe:first').contents().find("#japan-map-container > canvas");
-  			$mapObj.attr({
-  				width : $iframeCanvas.attr("width"),
-  				height : $iframeCanvas.attr("height")
-  			});
-  		});
-  	});
-  </script>
   <!-- //地図 -->
   <div class="py-5">
     <div class="container">
