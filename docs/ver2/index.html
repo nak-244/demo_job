@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ver.1</title>
+  <title>ver.2</title>
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="aquamarine.css">
   <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="map.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <!-- Script dependencies -->
   <script src="js/animate-in.js"></script>
@@ -360,105 +359,8 @@
     </div>
   </div>
   <!-- //sp MODAL -->
-  <div class="pt-1 pb-5" style="">
-    <div class="container">
-      <div class="row py-3 mx-1">
-        <div class="col-md-12">
-          <h4>エリアから探す</h4>
-        </div>
-      </div>
-      <div class="row mx-1 pc">
-        <div class="col-md-12">
-          <ul id="imagemap">
-            <li id="hokkaido"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=1"><span>北海道</span></a></li>
-            <li id="touhoku"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=2"><span>東北</span></a></li>
-            <li id="hokuriku"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=4"><span>北陸</span></a></li>
-            <li id="kanto"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=3"><span>関東</span></a></li>
-            <li id="tokai"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=5"><span>東海</span></a></li>
-            <li id="kansai"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=7"><span>関西</span></a></li>
-            <li id="chugoku"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=31,32,33,34,35"><span>中国</span></a></li>
-            <li id="shikoku"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=36,37,38,39"><span>四国</span></a></li>
-            <li id="kyushu"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=9"><span>九州</span></a></li>
-            <li id="okinawa"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=10"><span>沖縄</span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row mt-4 mx-1">
-        <div class="col-md-6">
-          <p class="mb-0">北海道・東北</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=1"><u>北海道</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=2"><u>青森</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=3"><u>岩手</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=4"><u>宮城</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=5"><u>秋田</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=6"><u>山形</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=7"><u>福島</u></a></li>
-          </ul>
-          <p class="mb-0">北陸・甲信越</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=15"><u>新潟</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=16"><u>富山</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=17"><u>石川</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=18"><u>福井</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=19"><u>山梨</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=20"><u>長野</u></a></li>
-          </ul>
-          <p class="mb-0">関西</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=25"><u>滋賀</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=26"><u>京都</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=27"><u>大阪</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=28"><u>兵庫</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=29"><u>奈良</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=30"><u>和歌山</u></a></li>
-          </ul>
-          <p class="mb-0">九州・沖縄</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=40"><u>福岡</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=41"><u>佐賀</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=42"><u>長崎</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=44"><u>大分</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=43"><u>熊本</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=45"><u>宮崎</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=46"><u>鹿児島</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=47"><u>沖縄</u></a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <p class="mb-0">関東</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=13"><u>東京</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=14"><u>神奈川</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=11"><u>埼玉</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=12"><u>千葉</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=9"><u>栃木</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=8"><u>茨城</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=10"><u>群馬</u></a></li>
-          </ul>
-          <p class="mb-0">東海</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=21"><u>岐阜</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=22"><u>静岡</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=23"><u>愛知</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=24"><u>三重</u></a></li>
-          </ul>
-          <p class="mb-0">中国・四国</p>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=33"><u>岡山</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=34"><u>広島</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=31"><u>鳥取</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=32"><u>島根</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=35"><u>山口</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=37"><u>香川</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=38"><u>愛媛</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=36"><u>徳島</u></a></li>
-            <li class="list-inline-item"><a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=39"><u>高知</u></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
   <div class="py-5">
     <div class="container">
       <div class="row border py-3 mx-1">
