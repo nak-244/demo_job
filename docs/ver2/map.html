@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>2段階選択式の日本地図</title>
+    <link rel="stylesheet" href="japanmap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.japan-map.js"></script>
     <script>
@@ -299,37 +300,5 @@
 <body>
 <div id="japan-map-container"></div>
 <input type="button" value="&lt;&lt;戻る" id="japan-map-back-btn"/>
-<style type="text/css">
-body {
-	padding: 0;
-	margin: 0;
-}
-
-iframe {
-	border:1px solid #666;
-}
-
-body #japan-map-container {
-	over-flow:hidden;
-	position:relative;
-	display:fixed;
-	z-index:100;
-}
-
-body #japan-map-container > canvas {
-	position:relative;
-	top:0px;
-	left:0px;
-	z-index: 101;
-}
-
-body #japan-map-back-btn {
-	position:absolute;
-	top:10px;
-	left:10px;
-	z-index:100000;
-	display: none;
-}
-</style>
 </body>
 </html>
