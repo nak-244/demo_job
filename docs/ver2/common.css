@@ -299,3 +299,8 @@ body #japan-map-back-btn {
 	z-index:100000;
 	display: none;
 }
+
+.center_iframe {
+  display: block;
+  margin: auto;
+}
