@@ -276,3 +276,9 @@
 .spmainmenu a:hover{
   color: #333333;
 }
+
+/* iframe 真ん中寄せ */
+.center_iframe {
+  display: block;
+  margin: auto;
+}
