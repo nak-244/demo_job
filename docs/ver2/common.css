@@ -284,9 +284,3 @@
 }
 
 /* slick */
-.slick-slide {
-  transition: .3s ease;
-}
-.slick-slide:not(.slick-current) {
-  opacity: .5;
-}
