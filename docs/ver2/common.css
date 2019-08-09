@@ -284,3 +284,36 @@
 }
 
 /* slick */
+.center img {
+  width: 100%;
+  height: auto;
+}
+
+.center .slick-next {
+  right: 20px;
+  z-index: 99;
+}
+
+.center .slick-prev {
+  left: 15px;
+  z-index: 100;
+}
+
+.slick-slide {
+  transition: .3s ease;
+  transform: scale(1);
+  transform-origin: 110% 50%;
+  filter: blur(2px);
+}
+
+.slick-current {
+  position: relative;
+  z-index: 2;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  filter: blur(0);
+}
+
+.slick-current+.slick-slide {
+  transform-origin: -10% 50%;
+}

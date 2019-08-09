@@ -364,9 +364,18 @@
   <link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/another_assets/sigotora_js/slick.css">
   <script type="text/javascript" src="https://www.olp.co.jp/another_assets/sigotora_js/slick.min.js"></script>
   <script type="text/javascript">
-
+    $(document).ready(function() {
+      $('.center').slick({
+        infinite: true, //スライドのループ有効化
+        dots: false, //ドットのナビゲーションを表示
+        centerMode: true, //要素を中央寄せ
+        centerPadding: '5%', //両サイドの見えている部分のサイズ
+        autoplay: true, //自動再生
+        arrows: false,
+      });
+    });
   </script>
-  <div>
+  <div class="center">
     <div><img src="assets/img/sigotora/slider1.jpg"></div>
     <div><img src="assets/img/sigotora/slider2.jpg"></div>
     <div><img src="assets/img/sigotora/slider3.jpg"></div>
