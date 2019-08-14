@@ -277,10 +277,13 @@
   color: #333333;
 }
 
-/* iframe 真ん中寄せ */
+/* iframe 真ん中寄せ 100% */
 .center_iframe {
   display: block;
   margin: auto;
+}
+iframe {
+  width: 100%;
 }
 
 /* slick */
