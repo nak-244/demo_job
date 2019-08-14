@@ -278,7 +278,11 @@
 }
 
 /* iframe 真ん中寄せ */
-
+.my-frame
+{
+margin: 0 auto;
+width: 768px;
+}
 
 
 /* slick */
