@@ -358,14 +358,10 @@ width: 768px;
   width: 50%;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   .last td:last-child {
     border-bottom: solid 1px #ccc;
     width: 100%;
-  }
-
-  .tbl-r04 {
-    width: 90%;
   }
 
   .tbl-r04 th,
