@@ -33,7 +33,7 @@ source内では一番下部に配置されるため、これを最優先で読�
 <link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/jobsite_assets/css/slick.css">
 ```
 
-## jsファイル内容
+## JS CSS ファイル内容
 ### グローバルメニュー上部固定用  
  ```html
 <script src="https://www.olp.co.jp/jobsite_assets/js/fixed.js"></script>
