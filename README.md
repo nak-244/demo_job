@@ -36,6 +36,7 @@ source内では一番下部に配置されるため、これを最優先で読�
 ### 二段階MAP
 ```html
 <script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/jobsite_assets/css/japanmap.css">
 ```
 
 ### スマホ用アコーディオン（エリア選択）
