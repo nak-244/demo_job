@@ -31,7 +31,12 @@
 }
 
 /* グローバルメニューを上で止める */
-
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
 
 /* グローバルメニュー リンク色変更 */
 #globalNavi a:link {
