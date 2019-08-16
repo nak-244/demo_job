@@ -25,6 +25,7 @@ source内では一番下部に配置されるため、これを最優先で読�
  <script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
  <script src="https://www.olp.co.jp/jobsite_assets/js/accordion.js"></script>
  ```
+上記コードは[JMerge](http://demo.lateralcode.com/jmerge/)でall.jsファイルに統合している。
 
 ### CSS
 ```html
