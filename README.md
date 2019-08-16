@@ -25,6 +25,14 @@ source内では一番下部に配置されるため、これを最優先で読�
  <script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
  <script src="https://www.olp.co.jp/jobsite_assets/js/accordion.js"></script>
  ```
+
+### CSS
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/jobsite_assets/css/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="https://www.olp.co.jp/jobsite_assets/css/slick.css">
+```
+
 ## jsファイル内容
 ### グローバルメニュー上部固定用  
  ```html
