@@ -19,3 +19,8 @@ source内では一番下部に配置されるため、これを最優先で読�
  ```html
 <script src="https://www.olp.co.jp/jobsite_assets/js/search.js"></script>
  ```
+
+### ロード時ロゴ表示
+  ```html
+ <script src="https://www.olp.co.jp/jobsite_assets/js/load.js"></script>
+  ```
