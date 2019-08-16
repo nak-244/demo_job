@@ -49,7 +49,7 @@
 
 <body>
   <!-- ロード時のエフェクト -->
-
+  <!--
   <div class="pc">
     <div class="start">
       <p><img src="assets/img/sigotora/logo_200.png"></p>
@@ -64,8 +64,7 @@
   		$('.start').fadeOut(500);
   	},4000);
   });
-  </script>
-
+  </script> -->
   <!-- //ロード時のエフェクト -->
   <div class="hero">
     <!-- pcヘッダー -->
@@ -94,7 +93,7 @@
           <div class="p-2 col-4">
           </div>
           <div class="p-2 col-4 d-flex justify-content-center align-items-center">
-            <a href="#" class="btn btn-outline-primary btn-sm rounded-0">マイページ</a>
+            <a href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" class="btn btn-outline-primary btn-sm rounded-0" target="_blank">マイページ</a>
           </div>
         </div>
       </div>
@@ -132,22 +131,22 @@
   <!-- SP -->
   <div class="sp">
     <header class="site-header border-bottom bg-white">
-        <div class="container py-1 px-0">
-          <div class="row small">
-            <div class="col-8">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item text-center small mx-0"> <a class="nav-link p-1" href="https://sigotora.jp/"><i class="fa d-inline fa-home fa-2x"></i><br>HOME</a> </li>
-                <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=job.srchform"><i class="fa d-inline fa-search fa-2x"></i><br>仕事検索</a></li>
-                <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216"><i class="fa d-inline fa-building fa-2x"></i><br>支店一覧</a></li>
-              </ul>
-            </div>
-            <div class="col-4 text-center">
-              <ul class="list-inline mb-0 text-right">
-                <li class="list-inline-item small border-left text-center"><a class="nav-link p-1" data-target="#modal-sp" data-toggle="modal" href="#modal-sp"><i class="fa d-inline fa-2x fa-bars"></i><br>メニュー</a></li>
-              </ul>
-            </div>
+      <div class="container py-1 px-0">
+        <div class="row small">
+          <div class="col-8">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item text-center small mx-0"> <a class="nav-link p-1" href="https://sigotora.jp/"><i class="fa d-inline fa-home fa-2x"></i><br>HOME</a> </li>
+              <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=job.srchform"><i class="fa d-inline fa-search fa-2x"></i><br>仕事検索</a></li>
+              <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216"><i class="fa d-inline fa-building fa-2x"></i><br>支店一覧</a></li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <ul class="list-inline mb-0 text-right">
+              <li class="list-inline-item small border-left text-center"><a class="nav-link p-1" data-target="#modal-sp" data-toggle="modal" href="#modal-sp"><i class="fa d-inline fa-2x fa-bars"></i><br>メニュー</a></li>
+            </ul>
           </div>
         </div>
+      </div>
     </header>
   </div>
   <!-- //SP -->
@@ -165,7 +164,7 @@
       </div>
     </div>
   </div>
-  <div class="text-center sp py-2 mt-4" style="	background-image: url(&quot;assets/img/sigotora/bg_headarea_02.jpg&quot;);	background-size: cover;	background-position: top left;	background-repeat: repeat-x;">
+  <div class="text-center sp py-2 mt-5" style="	background-image: url(&quot;assets/img/sigotora/bg_headarea_02.jpg&quot;);	background-size: cover;	background-position: top left;	background-repeat: repeat-x;">
     <div class="container">
       <div class="row">
         <div class="col-md-6 my-3 mx-auto p-2 small col-9" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
@@ -174,6 +173,106 @@
         </div>
       </div>
       <div class="row">
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row border py-3 mx-1">
+        <div class="col-md-12">
+          <h5>カンタン仕事検索</h5>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">勤務エリア</p><select id="srh_ken_param" class="custom-select rounded-0">
+            <option value="">---</option>
+            <option value="1">北海道</option>
+            <option value="2">青森県</option>
+            <option value="3">岩手県</option>
+            <option value="4">宮城県</option>
+            <option value="5">秋田県</option>
+            <option value="6">山形県</option>
+            <option value="7">福島県</option>
+            <option value="8">茨城県</option>
+            <option value="9">栃木県</option>
+            <option value="10">群馬県</option>
+            <option value="11">埼玉県</option>
+            <option value="12">千葉県</option>
+            <option value="13">東京都</option>
+            <option value="14">神奈川県</option>
+            <option value="15">新潟県</option>
+            <option value="16">富山県</option>
+            <option value="17">石川県</option>
+            <option value="18">福井県</option>
+            <option value="19">山梨県</option>
+            <option value="20">長野県</option>
+            <option value="21">岐阜県</option>
+            <option value="22">静岡県</option>
+            <option value="23">愛知県</option>
+            <option value="24">三重県</option>
+            <option value="25">滋賀県</option>
+            <option value="26">京都府</option>
+            <option value="27">大阪府</option>
+            <option value="28">兵庫県</option>
+            <option value="29">奈良県</option>
+            <option value="30">和歌山県</option>
+            <option value="31">鳥取県</option>
+            <option value="32">島根県</option>
+            <option value="33">岡山県</option>
+            <option value="34">広島県</option>
+            <option value="35">山口県</option>
+            <option value="36">徳島県</option>
+            <option value="37">香川県</option>
+            <option value="38">愛媛県</option>
+            <option value="39">高知県</option>
+            <option value="40">福岡県</option>
+            <option value="41">佐賀県</option>
+            <option value="42">長崎県</option>
+            <option value="43">熊本県</option>
+            <option value="44">大分県</option>
+            <option value="45">宮崎県</option>
+            <option value="46">鹿児島県</option>
+            <option value="47">沖縄県</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3">
+          <p class="lead text-left">職種</p>
+          <select id="srh_jobtype_param" class="custom-select rounded-0">
+            <option value="">---</option>
+            <option value="1">オフィス事務</option>
+            <option value="2">営業</option>
+            <option value="3">IT・エンジニア</option>
+            <option value="4">WEB・クリエイター</option>
+            <option value="5">販売</option>
+            <option value="6">イベント</option>
+            <option value="7">接客・サービス</option>
+            <option value="8">飲食・フード</option>
+            <option value="9">軽作業</option>
+            <option value="10">製造</option>
+            <option value="11">配送・ドライバー</option>
+            <option value="12">医療・介護・福祉・保育・栄養士</option>
+            <option value="13">講師・インストラクター</option>
+            <option value="14">美容・ヘルスケア</option>
+            <option value="15">農業・酪農</option>
+            <option value="16">漁業・水産</option>
+          </select>
+        </div>
+        <div class="col-md-10 col-sm-12 my-3">
+          <p class="lead text-left">キーワード</p>
+          <ul class="list-inline text-left text-muted mb-0 small">
+            <li class="list-inline-item">日払い</li>
+            <li class="list-inline-item">未経験歓迎</li>
+            <li class="list-inline-item">服装自由</li>
+            <li class="list-inline-item">オープニングスタッフ</li>
+          </ul><input type="text" class="form-control rounded-0" id="sfw">
+        </div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse"><a class="btn btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">検索</a></div>
+      </div>
+      <div class="row mt-5">
+        <div class="my-3 col-md-12">
+          <p class="text-center"><a href="https://www.olp.co.jp/lp/2019senior/" target="_blank"><u><i class="fa fa-fw fa-check"></i>シニア世代、積極採用</u></a>&nbsp;ー&nbsp;40代以上の方のお仕事探しを応援します。</p>
+          <p class="text-center"><a href="https://www.olp.co.jp/agent/" target="_blank"><u><i class="fa fa-fw fa-check"></i>正社員で転職をご希望の方</u></a>&nbsp;ー&nbsp;コンサルタントがあなたの転職を1対1でサポートします。</p>
+          <p class="text-center"><a href="https://www.olp.co.jp/medical/" target="_blank"><u><i class="fa fa-fw fa-check"></i>資格を活かして働きたい方</u></a>&nbsp;ー&nbsp;介護・看護・保育・調理師など、メディカル系に特化した求人情報はこちらです。</p>
+        </div>
       </div>
     </div>
   </div>
@@ -460,128 +559,6 @@
     });
   });
   </script>
-  <div class="py-5">
-    <div class="container">
-      <div class="row border py-3 mx-1">
-        <div class="col-md-12">
-          <h5>カンタン仕事検索</h5>
-        </div>
-        <div class="col-md-6 col-sm-12 my-3">
-          <p class="lead text-left">勤務エリア</p><select id="srh_ken_param" class="custom-select rounded-0">
-            <option value="">---</option>
-            <option value="1">北海道</option>
-            <option value="2">青森県</option>
-            <option value="3">岩手県</option>
-            <option value="4">宮城県</option>
-            <option value="5">秋田県</option>
-            <option value="6">山形県</option>
-            <option value="7">福島県</option>
-            <option value="8">茨城県</option>
-            <option value="9">栃木県</option>
-            <option value="10">群馬県</option>
-            <option value="11">埼玉県</option>
-            <option value="12">千葉県</option>
-            <option value="13">東京都</option>
-            <option value="14">神奈川県</option>
-            <option value="15">新潟県</option>
-            <option value="16">富山県</option>
-            <option value="17">石川県</option>
-            <option value="18">福井県</option>
-            <option value="19">山梨県</option>
-            <option value="20">長野県</option>
-            <option value="21">岐阜県</option>
-            <option value="22">静岡県</option>
-            <option value="23">愛知県</option>
-            <option value="24">三重県</option>
-            <option value="25">滋賀県</option>
-            <option value="26">京都府</option>
-            <option value="27">大阪府</option>
-            <option value="28">兵庫県</option>
-            <option value="29">奈良県</option>
-            <option value="30">和歌山県</option>
-            <option value="31">鳥取県</option>
-            <option value="32">島根県</option>
-            <option value="33">岡山県</option>
-            <option value="34">広島県</option>
-            <option value="35">山口県</option>
-            <option value="36">徳島県</option>
-            <option value="37">香川県</option>
-            <option value="38">愛媛県</option>
-            <option value="39">高知県</option>
-            <option value="40">福岡県</option>
-            <option value="41">佐賀県</option>
-            <option value="42">長崎県</option>
-            <option value="43">熊本県</option>
-            <option value="44">大分県</option>
-            <option value="45">宮崎県</option>
-            <option value="46">鹿児島県</option>
-            <option value="47">沖縄県</option>
-          </select>
-        </div>
-        <div class="col-md-6 col-sm-12 my-3">
-          <p class="lead text-left">職種</p>
-          <select id="srh_jobtype_param" class="custom-select rounded-0">
-            <option value="">---</option>
-            <option value="1">オフィス事務</option>
-            <option value="2">営業</option>
-            <option value="3">IT・エンジニア</option>
-            <option value="4">WEB・クリエイター</option>
-            <option value="5">販売</option>
-            <option value="6">イベント</option>
-            <option value="7">接客・サービス</option>
-            <option value="8">飲食・フード</option>
-            <option value="9">軽作業</option>
-            <option value="10">製造</option>
-            <option value="11">配送・ドライバー</option>
-            <option value="12">医療・介護・福祉・保育・栄養士</option>
-            <option value="13">講師・インストラクター</option>
-            <option value="14">美容・ヘルスケア</option>
-            <option value="15">農業・酪農</option>
-            <option value="16">漁業・水産</option>
-          </select>
-        </div>
-        <div class="col-md-10 col-sm-12 my-3">
-          <p class="lead text-left">キーワード</p>
-          <ul class="list-inline text-left text-muted mb-0 small">
-            <li class="list-inline-item">日払い</li>
-            <li class="list-inline-item">未経験歓迎</li>
-            <li class="list-inline-item">服装自由</li>
-            <li class="list-inline-item">オープニングスタッフ</li>
-          </ul><input type="text" class="form-control rounded-0" id="sfw">
-        </div>
-        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse"><a class="btn btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">検索</a></div>
-      </div>
-      <div class="row mt-5">
-        <div class="my-3 col-md-12">
-          <p class="text-center"><a href="https://www.olp.co.jp/lp/2019senior/" target="_blank"><u><i class="fa fa-fw fa-check"></i>シニア世代、積極採用</u></a>&nbsp;ー&nbsp;40代以上の方のお仕事探しを応援します。</p>
-          <p class="text-center"><a href="https://www.olp.co.jp/agent/" target="_blank"><u><i class="fa fa-fw fa-check"></i>正社員で転職をご希望の方</u></a>&nbsp;ー&nbsp;コンサルタントがあなたの転職を1対1でサポートします。</p>
-          <p class="text-center"><a href="https://www.olp.co.jp/medical/" target="_blank"><u><i class="fa fa-fw fa-check"></i>資格を活かして働きたい方</u></a>&nbsp;ー&nbsp;介護・看護・保育・調理師など、メディカル系に特化した求人情報はこちらです。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pb-md-0 text-center text-white special pt-5" style="	background-image: linear-gradient(to bottom, rgba(0, 160, 233, .2), rgba(0, 160, 233, .2)), url(&quot;assets/img/sigotora/top_call.jpg&quot;);	background-position: center center, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;">
-    <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=223" class="border-top border-bottom"></a>
-    <div class="container">
-      <div class="row">
-        <div class="text-dark col-lg-6 col-md-8 text-left p-2" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
-          <h5>コールセンターで働こう</h5>
-          <p class="mb-3">コールセンターのお仕事の内容から、勤務を通じて見つけられるスキルのこと、研修内容について、勤務時の服装などをわかりやすく説明いたします。</p> <button class="btn btn-outline-dark rounded-0">詳しくはこちら</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pb-md-0 text-center text-white special pt-5" style="	background-image: linear-gradient(to bottom, rgba(0, 160, 233, .2), rgba(0, 160, 233, .2)), url(&quot;assets/img/sigotora/top_man.jpg&quot;);	background-position: center center, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;">
-    <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=225" class="border-top border-bottom"></a>
-    <div class="container">
-      <div class="row">
-        <div class="ml-auto text-dark col-lg-6 col-md-8 text-left p-2" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
-          <h5>製造業で働こう</h5>
-          <p class="mb-3">製造業は、勤務する時間が決まっていることが多いので、ご自身の予定が立てやすく、収入の予測や働き方の設計がしやすいのが特徴です。</p> <button class="btn btn-outline-dark rounded-0">詳しくはこちら</button>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="text-left pt-5">
     <div class="container">
       <div class="row py-3 mx-1">
@@ -860,6 +837,28 @@
       </div>
     </div>
   </div>
+  <div class="pb-md-0 text-center text-white special pt-5" style="	background-image: linear-gradient(to bottom, rgba(0, 160, 233, .2), rgba(0, 160, 233, .2)), url(&quot;assets/img/sigotora/top_call.jpg&quot;);	background-position: center center, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;">
+    <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=223" class="border-top border-bottom"></a>
+    <div class="container">
+      <div class="row">
+        <div class="text-dark col-lg-6 col-md-8 text-left p-2" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+          <h5>コールセンターで働こう</h5>
+          <p class="mb-3">コールセンターのお仕事の内容から、勤務を通じて見つけられるスキルのこと、研修内容について、勤務時の服装などをわかりやすく説明いたします。</p> <button class="btn btn-outline-dark rounded-0">詳しくはこちら</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pb-md-0 text-center text-white special pt-5" style="	background-image: linear-gradient(to bottom, rgba(0, 160, 233, .2), rgba(0, 160, 233, .2)), url(&quot;assets/img/sigotora/top_man.jpg&quot;);	background-position: center center, center center;	background-size: 100%, cover;	background-repeat: repeat, repeat;">
+    <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=225" class="border-top border-bottom"></a>
+    <div class="container">
+      <div class="row">
+        <div class="ml-auto text-dark col-lg-6 col-md-8 text-left p-2" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+          <h5>製造業で働こう</h5>
+          <p class="mb-3">製造業は、勤務する時間が決まっていることが多いので、ご自身の予定が立てやすく、収入の予測や働き方の設計がしやすいのが特徴です。</p> <button class="btn btn-outline-dark rounded-0">詳しくはこちら</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="text-left py-3">
     <div class="container">
       <div class="row py-3 mx-1">
@@ -975,7 +974,6 @@
     </div>
   </div>
   <!-- card-img-top … IE対策のため、h-100を追加する -->
-
   <!-- pc MODAL -->
   <div class="modal fade fullscreen" id="modal-pc" tabindex="-1">
     <div class="modal-dialog" role="document">
@@ -1212,7 +1210,6 @@
     </div>
   </div>
   <!-- //sp MODAL -->
-
 </body>
 
 </html>
