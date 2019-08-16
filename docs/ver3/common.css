@@ -12,7 +12,6 @@
   .pc {
     display: none !important;
   }
-
   .sp {
     display: block !important;
   }
@@ -358,7 +357,7 @@ width: 768px;
   width: 50%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .last td:last-child {
     border-bottom: solid 1px #ccc;
     width: 100%;
