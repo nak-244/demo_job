@@ -31,21 +31,26 @@
 }
 
 /* グローバルメニューを上で止める */
-.fixed {
+.site-header{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+.site-header.fixed{
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 100000;
 }
 
 /* グローバルメニュー リンク色変更 */
-#globalNavi a:link {
+.site-header a:link {
     color: #000000 ;
 }
-#globalNavi a:visited {
+.site-header a:visited {
     color: #000000 ;
 }
-#globalNavi a:hover {
+.site-header a:hover {
     color: #F00038 ;
 }
 /* フルスクリーンMENU */
