@@ -1,5 +1,5 @@
 /* 横揺れを防ぐ  */
-body {
+html, body {
   overflow:hidden;
 }
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
