@@ -8,11 +8,10 @@
 }
 
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   .pc {
     display: none !important;
   }
-
   .sp {
     display: block !important;
   }
@@ -358,7 +357,7 @@ width: 768px;
   width: 50%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .last td:last-child {
     border-bottom: solid 1px #ccc;
     width: 100%;
@@ -370,4 +369,24 @@ width: 768px;
     display: block;
     width: 100%;
   }
+}
+
+/* ロード時のエフェクト用 */
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
 }

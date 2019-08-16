@@ -16,7 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/smooth-scroll.js"></script>
-  <script type="text/javascript">
+ <script type="text/javascript">
     jQuery(function($) {
       var nav = $('#globalNavi'),
         offset = nav.offset();
@@ -45,6 +45,25 @@
 </head>
 
 <body>
+  <!-- ロード時のエフェクト -->
+  <!--
+  <div class="pc">
+    <div class="start">
+      <p><img src="assets/img/sigotora/logo_200.png"></p>
+    </div>
+  </div>
+  <script> jQuery
+    $(function() {
+  	setTimeout(function(){
+  		$('.start p').fadeIn(1600);
+  	},500);
+  	setTimeout(function(){
+  		$('.start').fadeOut(500);
+  	},4000);
+  });
+  </script>
+  -->
+  <!-- //ロード時のエフェクト -->
   <!-- pcヘッダー -->
   <div class="border-bottom pc">
     <div class="container">
@@ -1160,21 +1179,21 @@
       <div class="row">
         <div class="col-md-4 col-sm-12 py-2">
           <div class="card border rounded-0 special">
-            <img class="card-img-top" src="assets/img/sigotora/med_bnr.png" alt="医療・福祉系の求人サイト">
+            <img class="card-img-top h-100" src="assets/img/sigotora/med_bnr.png" alt="医療・福祉系の求人サイト">
             <div class="card-body bg-white small"> 医療・福祉系の求人サイト【メジョモ】 </div>
             <a href="https://www.olp.co.jp/medical/"></a>
           </div>
         </div>
         <div class="col-md-4 col-sm-12 py-2">
           <div class="card border rounded-0 special">
-            <img class="card-img-top" src="assets/img/sigotora/cat_bnr.png" alt="転職エージェントサービス">
+            <img class="card-img-top h-100" src="assets/img/sigotora/cat_bnr.png" alt="転職エージェントサービス">
             <div class="card-body bg-white small"> 転職エージェントサービス【CAT】 </div>
             <a href="https://www.olp.co.jp/cat/"></a>
           </div>
         </div>
         <div class="col-md-4 col-sm-12 py-2">
           <div class="card border rounded-0 special">
-            <img class="card-img-top" src="assets/img/sigotora/global.png" alt="日本在住の外国人転職支援サービス">
+            <img class="card-img-top h-100" src="assets/img/sigotora/global.png" alt="日本在住の外国人転職支援サービス">
             <div class="card-body bg-white small"> 日本在住の外国人転職支援サービス </div>
             <a href="https://www.olp.co.jp/lp/2019global/"></a>
           </div>
@@ -1182,6 +1201,7 @@
       </div>
     </div>
   </div>
+  <!-- card-img-top … IE対策のため、h-100を追加する -->
 </body>
 
 </html>
