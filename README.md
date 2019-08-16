@@ -37,3 +37,8 @@ source内では一番下部に配置されるため、これを最優先で読�
 ```html
 <script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
 ```
+
+### スマホ用アコーディオン（エリア選択）
+```html
+ <script src="https://www.olp.co.jp/jobsite_assets/js/accordion.js"></script>
+```
