@@ -9,6 +9,22 @@
 
 source内では一番下部に配置されるため、これを最優先で読み込んでくれる。
 
+## 追加ファイルURL
+### JS
+ ```html
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/animate-in.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/smooth-scroll.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/fixed.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/search.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/load.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/slick.min.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/slick_go.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
+ <script src="https://www.olp.co.jp/jobsite_assets/js/accordion.js"></script>
+ ```
 ## jsファイル内容
 ### グローバルメニュー上部固定用  
  ```html
