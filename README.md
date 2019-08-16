@@ -32,3 +32,8 @@ source内では一番下部に配置されるため、これを最優先で読�
 <script src="https://www.olp.co.jp/jobsite_assets/js/slick.min.js"></script>
 <script src="https://www.olp.co.jp/jobsite_assets/js/slick_go.js"></script>
 ```
+
+### 二段階MAP
+```html
+<script src="https://www.olp.co.jp/jobsite_assets/js/japanmap_start.js"></script>
+```
