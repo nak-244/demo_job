@@ -395,3 +395,32 @@ width: 768px;
 	z-index: 9999;
 	width: 280px;
 }
+
+/* 検索画面テーブル */
+.tbl-r02 th {
+  background: #F0F0F0;
+  border: solid 1px #ccc;
+  color: #333;
+  padding: 10px;
+  width: 20%;
+}
+.tbl-r02 td {
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .tbl-r02 {
+    width: 100%;
+  }
+  .tbl-r02 th,
+  .tbl-r02 td {
+　　border-bottom: none;
+    display: block;
+    width: 100%;
+  }
+}
