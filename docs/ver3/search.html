@@ -188,8 +188,8 @@
               </tr>
               <tr>
                 <th>勤務期間を選ぶ</th>
-                <td>
-                  <ul class="list-inline mb-0">
+                <td class="">
+                  <ul class="list-inline my-1">
                     <li class="list-inline-item mr-3">
                       <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_span_param" id="1週間以内" name="srh_span_param" value="1"><label class="custom-control-label" for="1週間以内">1週間以内</label></div>
                     </li>
@@ -203,6 +203,18 @@
                       <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_span_param" id="3ヶ月以上" name="srh_span_param" value="4"><label class="custom-control-label" for="3ヶ月以上">3ヶ月以上</label></div>
                     </li>
                   </ul>
+                </td>
+              </tr>
+              <tr>
+                <th>時給を選ぶ</th>
+                <td>
+                  <select id="srh_hour_money_param" class="custom-select">
+                    <option value="">▼選択してください</option>
+                    <option value="296">時給900円以上</option>
+                    <option value="295">時給1000円以上</option>
+                    <option value="294">時給1100円以上</option>
+                    <option value="293">時給1400円以上</option>
+                  </select>
                 </td>
               </tr>
             </tbody>
