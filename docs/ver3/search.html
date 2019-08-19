@@ -106,7 +106,7 @@
   <!-- //固定MENU -->
   <!-- PC -->
   <div class="py-5 pc">
-    <div class="container pt-3">
+    <div class="container pt-4">
       <div class="row">
         <div class="col-md-12">
           <h5 class="mb-3">希望の条件にピッタリのお仕事を探す</h5>
@@ -114,7 +114,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 pt-3">
+          <h4 class=""><span class="badge badge-primary">基本条件を設定</span></h4>
           <table class="table mt-3 tbl-r02">
             <tbody>
               <tr>
@@ -222,7 +223,7 @@
                 <th>職種を選ぶ</th>
                 <td>
                   <select id="srh_jobtype_param" class="custom-select">
-                    <option value="">▼職種を選んでください</option>
+                    <option value="">▼選択してください</option>
                     <option value="1">オフィス事務</option>
                     <option value="2">営業</option>
                     <option value="3">IT・エンジニア</option>
@@ -683,7 +684,59 @@
           </table>
         </div>
       </div>
-      <a class="btn btn-primary btn-lg text-light my-1 d-flex justify-content-center align-items-center" href="https://olp-medical.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
+      <div class="row">
+        <div class="col-md-12 pt-3">
+          <h4 class=""><span class="badge badge-primary">こだわり条件を設定</span></h4>
+          <table class="table mt-3 tbl-r02">
+            <tbody>
+              <tr>
+                <th>人気のおすすめ条件</th>
+                <td>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>雇用形態を選ぶ</th>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>勤務期間を選ぶ</th>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>時給を選ぶ</th>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <th>職種を選ぶ</th>
+                <td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-center col-md-12">
+          <a class="btn btn-lg text-light my-1 d-flex justify-content-center align-items-center btn-primary rounded-0" href="https://olp-medical.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- //PC -->
