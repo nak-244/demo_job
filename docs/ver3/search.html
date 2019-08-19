@@ -15,6 +15,7 @@
   <!-- Script dependencies -->
   <script src="https://www.olp.co.jp/jobsite_assets/js/all.js"></script>
   <script src="js/box.js"></script>
+  <script src="js/box-job.js"></script>
 </head>
 
 <body>
@@ -239,7 +240,47 @@
                     <option value="15">農業・酪農</option>
                     <option value="16">漁業・水産</option>
                   </select>
-                  <!-- 市区町村データ  ↓　-->
+                  <!-- 職種別詳細データ  ↓　-->
+                  <div id="display">
+                    <div id="box1" style="display: none;">
+                      <p>&nbsp;</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="一般事務" name="srh_jobtype_child_param" value="1"><label class="custom-control-label" for="一般事務">一般事務</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="営業事務" name="srh_jobtype_child_param" value="2"><label class="custom-control-label" for="営業事務">営業事務</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="データ入力" name="srh_jobtype_child_param" value="3"><label class="custom-control-label" for="データ入力">データ入力</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="コールセンター・テレオペ" name="srh_jobtype_child_param" value="4"><label class="custom-control-label" for="コールセンター・テレオペ">コールセンター・テレオペ</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="コールセンター管理・運営" name="srh_jobtype_child_param" value="5"><label class="custom-control-label" for="コールセンター管理・運営">コールセンター管理・運営</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="受付・秘書" name="srh_jobtype_child_param" value="6"><label class="custom-control-label" for="受付・秘書">受付・秘書</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="人事・総務" name="srh_jobtype_child_param" value="7"><label class="custom-control-label" for="人事・総務">人事・総務</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="経理・財務" name="srh_jobtype_child_param" value="8"><label class="custom-control-label" for="経理・財務">経理・財務</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="会計・税務" name="srh_jobtype_child_param" value="9"><label class="custom-control-label" for="会計・税務">会計・税務</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="法務・特許" name="srh_jobtype_child_param" value="10"><label class="custom-control-label" for="法務・特許">法務・特許</label></div>
+                        </li>
+                        <li class="list-inline-item mr-3 mb-2">
+                          <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_jobtype_child_param" id="オフィス事務" name="srh_jobtype_child_param" value="11"><label class="custom-control-label" for="オフィス事務">オフィス事務</label></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </td>
               </tr>
             </tbody>
