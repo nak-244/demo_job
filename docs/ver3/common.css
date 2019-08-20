@@ -427,3 +427,37 @@ width: 768px;
 }
 
 /* チェックボックスをbutton化 */
+.multicheck {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .multicheck .multicheck-item {
+    margin: 5px 0;
+    padding: 0; }
+  .multicheck input[type="checkbox"] {
+    display: none; }
+  .multicheck input[type="checkbox"].multicheck-input:checked + label {
+    background: #C0E8FF;
+    color: #333333;
+    border: 2px solid #28A7E1; }
+  .multicheck .multicheck-label {
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #333333;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #F0F0F0;
+    transition: 0.5s; }
+  .multicheck .multicheck-label:hover {
+    background-color: #E2EDF9;
+    border: 2px solid #28A7E1; }
+.multicheck.multicheck-inline .multicheck-item {
+  display: inline-block; }
+.multicheck.multicheck-inline .multicheck-label {
+  display: inline-block;
+  width: 100px; }
