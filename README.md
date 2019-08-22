@@ -25,6 +25,9 @@
     padding-right: initial;
     padding-left: initial;
 }
+small {
+    text-align: center;
+}
 @media screen and (max-width: 768px) {
 .center-free {
     width: initial;
@@ -44,7 +47,6 @@
 1. 新着のお仕事
 1. バナー枠No.1
 1. お知らせ・最新情報
-1. ランダムバナー
 
 ### 反映方法
 
