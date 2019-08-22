@@ -25,6 +25,13 @@
     padding-right: initial;
     padding-left: initial;
 }
+@media screen and (max-width: 768px)
+.center-free {
+    width: initial;
+    padding: initial;
+    margin:  initial;
+    box-sizing: initial;
+}
 </style>
 ~~~
 ### レイアウト指定
