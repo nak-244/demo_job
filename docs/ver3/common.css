@@ -1,9 +1,3 @@
-/* ジョブサイト標準のクラスを解除 */
-.col-1 {
-  flex: initial;
-  max-width: initial;
-}
-
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
 .pc {
   display: block !important;
