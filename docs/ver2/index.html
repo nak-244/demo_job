@@ -17,12 +17,11 @@
 </head>
 
 <body>
-  <div class="">
+  <!-- <div class="">
     <div class="start">
       <p><img src="https://www.olp.co.jp/jobsite_assets/img/sigotora/logo_200.png"></p>
     </div>
-  </div>
-
+  </div> -->
   <div class="hero">
     <!-- pcヘッダー -->
     <div class="border-bottom pc">
@@ -142,23 +141,17 @@
           </div>
           <div class="container mx-auto">
             <div class="row pb-4 mx-auto">
-              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2"> &nbsp;<i class="d-block fa mb-3 fa-search text-body fa-2x">&nbsp;</i>
+              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2 mr-2"> &nbsp;<i class="d-block fa mb-3 fa-search text-body fa-2x">&nbsp;</i>
                 <h5>お仕事を探す</h5>
                 <a href="https://sigotora.jp/index.cfm?fuseaction=job.srchform"></a>
               </div>
-              <div class="col-1">
-              </div>
-              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2"> &nbsp;<i class="d-block fa mb-3 fa-building text-body fa-2x">&nbsp;</i>
+              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2 mx-2"> &nbsp;<i class="d-block fa mb-3 fa-building text-body fa-2x">&nbsp;</i>
                 <h5>支店一覧</h5>
                 <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216"></a>
               </div>
-              <div class="col-1">
-              </div>
-              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2"> &nbsp;<i class="d-block fa mb-3 fa-user-circle text-body fa-2x">&nbsp;</i>
+              <div class="d-flex flex-column align-items-center border p-3 specialmenu col-md-2 mx-2"> &nbsp;<i class="d-block fa mb-3 fa-user-circle text-body fa-2x">&nbsp;</i>
                 <h5>マイページ</h5>
                 <a href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank"></a>
-              </div>
-              <div class="col-1">
               </div>
             </div>
           </div>
@@ -335,7 +328,7 @@
         <div class="col-md-12">
           <h5>カンタン仕事検索</h5>
         </div>
-        <div class="col-md-6 col-sm-12 my-3">
+        <div class="col-md-6 col-sm-12 my-3 px-3">
           <p class="lead text-left">勤務エリア</p><select id="srh_ken_param" class="custom-select rounded-0">
             <option value="">---</option>
             <option value="1">北海道</option>
@@ -387,7 +380,7 @@
             <option value="47">沖縄県</option>
           </select>
         </div>
-        <div class="col-md-6 col-sm-12 my-3">
+        <div class="col-md-6 col-sm-12 my-3 px-3">
           <p class="lead text-left">職種</p>
           <select id="srh_jobtype_param" class="custom-select rounded-0">
             <option value="">---</option>
@@ -409,16 +402,16 @@
             <option value="16">漁業・水産</option>
           </select>
         </div>
-        <div class="col-md-10 col-sm-12 my-3">
+        <div class="col-md-10 col-sm-12 my-3 px-3">
           <p class="lead text-left">キーワード</p>
           <ul class="list-inline text-left text-muted mb-0 small">
             <li class="list-inline-item">日払い</li>
             <li class="list-inline-item">未経験歓迎</li>
             <li class="list-inline-item">服装自由</li>
             <li class="list-inline-item">オープニングスタッフ</li>
-          </ul><input type="text" class="form-control rounded-0" id="sfw">
+          </ul><input type="text" class="form-control rounded-0 w-100" id="sfw">
         </div>
-        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse"><a class="btn btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">検索</a></div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse px-3"><a class="btn btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_ken_param=&amp;srh_jobtype_param=&amp;sfw=" id="test">検索</a></div>
       </div>
       <div class="row mt-5">
         <div class="my-3 col-md-12">
@@ -464,7 +457,7 @@
     <!-- //地図 -->
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light"> 北海道・東北地方 </div>
             <div class="card-body p-2 bg-white">
@@ -480,7 +473,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light">関東地方</div>
             <div class="card-body p-2 bg-white">
@@ -496,7 +489,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light">中部地方 </div>
             <div class="card-body p-2 bg-white">
@@ -516,7 +509,7 @@
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light">関西地方</div>
             <div class="card-body p-2 bg-white">
@@ -532,7 +525,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light">中国・四国地方</div>
             <div class="card-body p-2 bg-white">
@@ -550,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 px-3">
           <div class="card border rounded-0">
             <div class="card-header bg-light">九州・沖縄地方</div>
             <div class="card-body p-2 bg-white">
@@ -1056,21 +1049,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-12 py-2">
+        <div class="col-md-4 col-sm-12 py-2 px-3">
           <div class="card border rounded-0 special">
             <img class="card-img-top h-100" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/med_bnr.png" alt="医療・福祉系の求人サイト">
             <div class="card-body bg-white small"> 医療・福祉系の求人サイト【メジョモ】 </div>
             <a href="https://www.olp.co.jp/medical/"></a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 py-2">
+        <div class="col-md-4 col-sm-12 py-2 px-3">
           <div class="card border rounded-0 special">
             <img class="card-img-top h-100" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/cat_bnr.png" alt="転職エージェントサービス">
             <div class="card-body bg-white small"> 転職エージェントサービス【CAT】 </div>
             <a href="https://www.olp.co.jp/cat/"></a>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 py-2">
+        <div class="col-md-4 col-sm-12 py-2 px-3">
           <div class="card border rounded-0 special">
             <img class="card-img-top h-100" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/global.png" alt="日本在住の外国人転職支援サービス">
             <div class="card-body bg-white small"> 日本在住の外国人転職支援サービス </div>
