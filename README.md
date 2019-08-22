@@ -6,7 +6,8 @@
 ### 直接指定CSS
 
 ~~~html
-<style type="text/css">.col-1 {
+<style type="text/css">
+.col-1 {
   flex: initial;
   max-width: initial;
 }
