@@ -1,5 +1,5 @@
 /* ジョブサイト標準のクラスを解除 */
-.col-2 {
+.col-1 {
   flex: initial;
   max-width: initial;
 }
