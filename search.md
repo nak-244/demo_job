@@ -1,3 +1,21 @@
+## 8月23日にやること
+* セレクトボックスをチェックボックスに変更
+* all.jsのsearch部分をチェックボックスに変更
+* 下記の都道府県＋市区町村の表記に変更し、動くかどうかを確認
+* CSS・JS関連の記述の場所（全ページに反映されるように）
+
+### ラジオボタンにする場合
+~~~html
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+</div>
+~~~
+
 ## 検索について
 登録がない市町村はセレクトボックスに表示されないようにする。  
 チェックボックス式にするには時間がかかりそうだったので、標準のセレクトボックスを用いて、最大5つの市区町村を同時選択できるようにする。  
