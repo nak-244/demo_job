@@ -3,6 +3,24 @@
 * ver2 ・・・ jsファイルオリジナル版
 * ver3 ・・・ カスタマイズ確認用
 
+### 直接指定CSS
+
+~~~html
+<style type="text/css">.col-1 {
+  flex: initial;
+  max-width: initial;
+}
+#main-wrap {
+    width: initial;
+    margin: initial;
+    overflow: initial;
+}
+.main {
+    width: initial;
+    margin: initial;
+}
+</style>
+~~~
 
 ### 反映方法
 
