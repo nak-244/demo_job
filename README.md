@@ -25,7 +25,7 @@
 ~~~
 ### レイアウト指定
 [変更URL](https://olp-cat.jp/aspadmnt/index.cfm?fuseaction=layoutset.list)  
-##### 変更前
+#### 変更前
 1. フリーエリアNo.1
 1. カンタン仕事検索
 1. 新着のお仕事
