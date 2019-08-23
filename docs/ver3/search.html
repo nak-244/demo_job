@@ -174,16 +174,27 @@
               </tr>
               <tr>
                 <th>雇用形態を選ぶ</th>
-                <td>
-                  <select id="srh_shift_param" class="custom-select">
-                    <option value="">▼選択してください</option>
-                    <option value="1">派遣社員</option>
-                    <option value="6">アルバイト</option>
-                    <option value="2">紹介予定派遣</option>
-                    <option value="3">紹介</option>
-                    <option value="4">契約社員</option>
-                    <option value="5">正社員</option>
-                  </select>
+                <td class="">
+                  <ul class="list-inline my-1">
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="派遣社員" name="srh_shift_param" value="1"><label class="custom-control-label" for="派遣社員">派遣社員</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="アルバイト" name="srh_shift_param" value="6"><label class="custom-control-label" for="アルバイト">アルバイト</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="紹介予定派遣" name="srh_shift_param" value="2"><label class="custom-control-label" for="紹介予定派遣">紹介予定派遣</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="紹介" name="srh_shift_param" value="3"><label class="custom-control-label" for="紹介">紹介</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="契約社員" name="srh_shift_param" value="4"><label class="custom-control-label" for="契約社員">契約社員</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_shift_param" id="正社員" name="srh_shift_param" value="5"><label class="custom-control-label" for="正社員">正社員</label></div>
+                    </li>
+                  </ul>
                 </td>
               </tr>
               <tr>
@@ -207,14 +218,21 @@
               </tr>
               <tr>
                 <th>時給を選ぶ</th>
-                <td>
-                  <select id="srh_hour_money_param" class="custom-select">
-                    <option value="">▼選択してください</option>
-                    <option value="296">時給900円以上</option>
-                    <option value="295">時給1000円以上</option>
-                    <option value="294">時給1100円以上</option>
-                    <option value="293">時給1400円以上</option>
-                  </select>
+                <td class="">
+                  <ul class="list-inline my-1">
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_hour_money_param" id="時給900円以上" name="srh_hour_money_param" value="296"><label class="custom-control-label" for="時給900円以上">時給900円以上</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_hour_money_param" id="時給1000円以上" name="srh_hour_money_param" value="295"><label class="custom-control-label" for="時給1000円以上">時給1000円以上</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_hour_money_param" id="時給1100円以上" name="srh_hour_money_param" value="294"><label class="custom-control-label" for="時給1100円以上">時給1100円以上</label></div>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                      <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input srh_hour_money_param" id="時給1400円以上" name="srh_hour_money_param" value="293"><label class="custom-control-label" for="時給1400円以上">時給1400円以上</label></div>
+                    </li>
+                  </ul>
                 </td>
               </tr>
               <tr>
@@ -893,7 +911,7 @@
       </div>
       <div class="row">
         <div class="d-flex justify-content-center col-md-12">
-          <a class="btn btn-lg text-light my-1 d-flex justify-content-center align-items-center btn-primary rounded-0" href="https://olp-medical.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
+          <a class="btn btn-lg text-light my-1 d-flex justify-content-center align-items-center btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
         </div>
       </div>
     </div>
