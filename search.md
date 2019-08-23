@@ -1,7 +1,8 @@
 ## 8月26日にやること
 * 下記の都道府県＋市区町村の表記に変更し、動くかどうかを確認
 * CSS・JS関連の記述の場所（全ページに反映されるように）
-* [TOPフリーエリア設定](https://olp-cat.jp/aspadmnt/index.cfm?fuseaction=topfreearea.list) エリア枠No.4に登録済。
+* [TOPフリーエリア設定](https://olp-cat.jp/aspadmnt/index.cfm?fuseaction=topfreearea.list) エリア枠No.4、5に登録済。
+* こだわり条件のボタンがずれてるっぽいから確認し直す
 
 ### ラジオボタンにする場合
 ~~~html
