@@ -102,7 +102,7 @@
   </div>
   <!-- //SP -->
   <!-- //固定MENU -->
-  <!-- フリーエリア4 -->
+  <!-- 基本条件 -->
   <div class="pt-5 pb-1">
     <div class="container pt-4">
       <div class="row">
@@ -123,7 +123,7 @@
                     <div class="col-12">
                       <p class="small mb-1">1、都道府県を選択</p>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="checkmark"><select name="srh_ken_param" class="custom-select">
+                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="badge badge-secondary">必須</span><span class="checkmark"><select name="srh_ken_param" class="custom-select">
                           <option value="">----</option>
                           <option value="1">北海道</option>
                           <option value="2">青森県</option>
@@ -175,15 +175,14 @@
                   <div class="row mt-1">
                     <div class="col-12 mt-2">
                       <p class="small mb-1">2、市区町村を選択</p>
-                      <p class="small mb-1 text-secondary">1つは必ず選択してください</p>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="checkmark"> <select id="srh_city_param1" name="srh_city_param" class="custom-select">
+                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="badge badge-secondary">必須</span><span class="checkmark"> <select id="srh_city_param1" name="srh_city_param" class="custom-select">
                           <option value="">----</option>
                         </select> </span></div>
-                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="checkmark"> <select id="srh_city_param2" name="srh_city_param" class="custom-select">
+                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="badge badge-primary">任意</span><span class="checkmark"> <select id="srh_city_param2" name="srh_city_param" class="custom-select">
                           <option value="">----</option>
                         </select> </span></div>
-                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="checkmark"> <select id="srh_city_param3" name="srh_city_param" class="custom-select">
+                    <div class="col-md-4 col-sm-12 col-12 my-2"><span class="badge badge-primary">任意</span><span class="checkmark"> <select id="srh_city_param3" name="srh_city_param" class="custom-select">
                           <option value="">----</option>
                         </select> </span></div>
                   </div>
@@ -701,8 +700,8 @@
       </div>
     </div>
   </div>
-  <!-- //フリーエリア4 -->
-  <!-- フリーエリア5 pc -->
+  <!-- //基本条件 -->
+  <!-- こだわり条件 pc -->
   <div class="pc pb-5">
     <div class="container pt-4">
       <div class="row">
@@ -930,15 +929,10 @@
           </table>
         </div>
       </div>
-      <div class="row">
-        <div class="d-flex justify-content-center col-md-12">
-          <a class="btn btn-lg text-light my-1 d-flex justify-content-center align-items-center btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- //フリーエリア5 pc -->
-  <!-- フリーエリア5 sp -->
+  <!-- //こだわり条件 pc -->
+  <!-- こだわり条件 sp -->
   <div class="sp pb-5">
     <div class="container pt-4">
       <div class="row">
@@ -1146,6 +1140,12 @@
           </table>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- //こだわり条件 sp -->
+  <!-- 検索ボタン -->
+  <div class="pb-5">
+    <div class="container pt-4">
       <div class="row">
         <div class="d-flex justify-content-center col-md-12">
           <a class="btn btn-lg text-light my-1 d-flex justify-content-center align-items-center btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist" id="search"><i class="fa fa-fw fa-search"></i>検索する</a>
@@ -1153,7 +1153,8 @@
       </div>
     </div>
   </div>
-  <!-- //フリーエリア5 sp -->
+  <!-- //検索ボタン -->
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
