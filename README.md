@@ -1,7 +1,6 @@
 ### ディレクトリ説明
-* ver1 ・・・ 現状のベスト
-* ver2 ・・・ jsファイルオリジナル版
-* ver3 ・・・ カスタマイズ確認用
+* ver1 ・・・ [【検索画面】](https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=227)
+
 
 ### 直接指定CSS
 ジョブサイト標準のスタイルを解除するため
