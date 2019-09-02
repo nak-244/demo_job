@@ -1,5 +1,5 @@
 ### ディレクトリ説明
-* ver1 ・・・ [【検索画面】](https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=227)
+* search ・・・ [【検索画面】](https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=227)
 
 
 ### 直接指定CSS
