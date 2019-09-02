@@ -1,5 +1,6 @@
 ### ディレクトリ説明
-* search ・・・ [【検索画面】](https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=227)
+* ver1 （現状の最新版）
+* ver2 テスト用
 
 
 ### 直接指定CSS
