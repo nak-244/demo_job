@@ -453,7 +453,7 @@ width: 768px;
 }
 .multicheck.multicheck-inline .multicheck-label {
   display: inline-block;
-  width: 100px;
+  width: 220px;
 }
 
 /* チェックボックスをbutton化 sp */
