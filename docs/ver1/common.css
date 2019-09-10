@@ -1,6 +1,6 @@
 /* 追従ボタン シングルタップ設定 */
-.btn-ignore {
-  pointer-events: none;
+.fixed-bottom {
+    bottom: 44px;
 }
 
 /* パソコンで見たときは"pc"のclassがついた画像が表示される */
