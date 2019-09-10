@@ -346,3 +346,16 @@ $('#srh_jobtype_param').change(function() {
 $(document).ready(function() {
     $('#srh_city_param').select2({closeOnSelect:false,multiple: true,});
 });
+
+// スマホ用申込ボタン時差出現
+$(document).ready(function(){
+    $(window).scroll(function () {
+        var s = $(this).scrollTop();
+        var m = 100;
+        if(s > m) {
+            $(".onetapbtn").fadeIn('1000');
+        } else if(s < m) {
+            $(".onetapbtn").fadeOut('1000');
+        }
+    });
+});
