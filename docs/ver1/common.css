@@ -181,8 +181,11 @@
     z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
 }
 .oubobtn a {
-    top: 0;
+    position: absolute;
+    top: 0.5rem;
     left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
@@ -208,16 +211,22 @@
     width: 80%;/*ボタンの幅*/
     padding: 10px 0;
     margin: 30px auto;
-    background-color: #ed4545;/*ボタンの色*/
+    background-color: #00AEEF;/*ボタンの色*/
+    font-weight: bold;
     font-size: 18px;
-    color: #fff;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
 }
+.shiny-btn1 a{
+      color: #fff!important;
+}
 .shiny-btn1:hover {
     text-decoration: none;
     color: #fff;
+}
+.shiny-btn1 a:hover{
+      text-decoration: none!important;
 }
 .shiny-btn1::before {
     position: absolute;
