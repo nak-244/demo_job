@@ -175,6 +175,34 @@
   /*IE*/
 }
 
+/* 応募ボタン */
+.oubobtn {
+    position: relative;
+    z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+.oubobtn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+.oubobtn:hover {
+  filter: alpha(opacity=70);
+  /* IE 6,7*/
+  -ms-filter: "alpha(opacity=70)";
+  /* IE 8,9 */
+  -moz-opacity: 0.7;
+  /* FF , Netscape */
+  -khtml-opacity: 0.7;
+  /* Safari 1.x */
+  opacity: 0.7;
+  zoom: 1;
+  /*IE*/
+}
+
   /* modal フルスクリーン */
   .fullscreen{
     z-index: 99999999;
