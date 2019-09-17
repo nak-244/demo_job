@@ -181,7 +181,6 @@
     z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
 }
 .oubobtn a {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
