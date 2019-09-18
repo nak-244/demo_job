@@ -289,30 +289,30 @@
 }
 
 /* ボタンをきらっとlist */
-.shiny-btnlist {
+.shiny-btn3 {
     display: block;
     position: relative;
-    width: 55%;/*ボタンの幅*/
+    width: 60%;/*ボタンの幅*/
     padding: 10px 0;
-    margin: 2px auto;
-    background-color: #00AEEF;/*ボタンの色*/
+    margin: 30px auto;
+    background-color: #ffc107;/*ボタンの色*/
     font-weight: bold;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
 }
-.shiny-btnlist a{
+.shiny-btn3 a{
       color: #fff!important;
 }
-.shiny-btnlist:hover {
+.shiny-btn3:hover {
     text-decoration: none;
     color: #fff;
 }
-.shiny-btnlist a:hover{
+.shiny-btn3 a:hover{
       text-decoration: none!important;
 }
-.shiny-btnlist::before {
+.shiny-btn3::before {
     position: absolute;
     content: '';
     display: inline-block;
@@ -321,14 +321,9 @@
     width: 30px;
     height: 100%;
     background-color: #fff;
-    animation: shiny-btnlist 3s ease-in-out infinite;
+    animation: shiny-btn3 3s ease-in-out infinite;
 }
-@-webkit-keyframes shiny-btnlist {
-    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
-    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
-    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
-    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
-}
+
 
 
   /* modal フルスクリーン */
