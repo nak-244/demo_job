@@ -288,6 +288,49 @@
     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
+/* ボタンをきらっとlist */
+.shiny-btnlist {
+    display: block;
+    position: relative;
+    width: 55%;/*ボタンの幅*/
+    padding: 10px 0;
+    margin: 2px auto;
+    background-color: #00AEEF;/*ボタンの色*/
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+}
+.shiny-btnlist a{
+      color: #fff!important;
+}
+.shiny-btnlist:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.shiny-btnlist a:hover{
+      text-decoration: none!important;
+}
+.shiny-btnlist::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btnlist 3s ease-in-out infinite;
+}
+@-webkit-keyframes shiny-btnlist {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
   /* modal フルスクリーン */
   .fullscreen{
     z-index: 99999999;
