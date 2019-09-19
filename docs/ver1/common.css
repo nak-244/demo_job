@@ -548,10 +548,13 @@ width: 768px;
   color: #333;
   padding: 10px;
   width: 25%;
+  font-size: 0.9rem;
 }
 .tbl-r02 td {
+  background: #FFFFFF;
   border: solid 1px #ccc;
   padding: 10px;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 767px) {
