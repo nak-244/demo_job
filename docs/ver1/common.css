@@ -288,11 +288,11 @@
     100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }
 
-/* ボタンをきらっとlist */
+/* ボタンをきらっと 詳細を見る */
 .shiny-btn3 {
     display: block;
     position: relative;
-    width: 60%;/*ボタンの幅*/
+    width: 80%;/*ボタンの幅*/
     padding: 10px 0;
     margin: 30px auto;
     background-color: #ffc107;/*ボタンの色*/
