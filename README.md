@@ -68,12 +68,10 @@
 8.  フリーエリア№1
 
 ■トップページのデータを作成
--   [TOPフリーエリア設定](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=topfreearea.list)
--   フリーエリア№6にデータあり
--   レイアウト設定に配置
-
-■
+* [TOPフリーエリア設定](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=topfreearea.list)
+* フリーエリア№6にデータあり
+* レイアウト設定に配置
 
 残りの作業
--   応募ページ（既存ページ）のCSS調整
--   仕事リストの【前へ　何件　次へ】のレイアウト
+* 応募ページ（既存ページ）のCSS調整
+* 仕事リストの【前へ　何件　次へ】のレイアウト
