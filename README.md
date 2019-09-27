@@ -74,5 +74,5 @@
 
 
 残りの作業
-* 応募ページ（既存ページ）のCSS調整
+* [form.html](file:///C:/Users/tsuyoshi.nakamura/Documents/GitHub/demo_job/docs/ver1/form.html)CSS調整
 * 仕事リストの【前へ　何件　次へ】のレイアウト
