@@ -44,20 +44,18 @@
 	<li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.sitemap">サイトマップ</a></li>
 </ul>
 </footer>
-
 ```
 
-
 ■サイドメニュー設定
--   OFFにする
+* OFFにする
 
 ■案件リスト（画像なし）
--   モーダルより下をコピペ済
+* モーダルより下をコピペ済
 
 ■案件詳細（画像なし）
--   モーダルより下をコピペ済
+* モーダルより下をコピペ済
 
-[レイアウト設定](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=layoutset.list)
+#### [レイアウト設定](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=layoutset.list)
 
 ※元々の設定
 1.  カンタン仕事検索
