@@ -8,13 +8,26 @@
 * search.html [検索画面](https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=227)
 * detail.html [詳細画面](https://www.olp.co.jp/ver1/detail.html)
 
-### 0922にやること
+### 0927にやること
 [デザインカスタマイズ](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=customDesign.edit)
 
 ■ヘッダー設定
--   外部css
--   外部js
--   モーダル部分まで記述済
+* 外部css
+* 外部js
+* モーダル部分まで記述済
+
+■フッター設定
+* 下記内容に変更
+<footer>
+<p id="page-top"><a href="#">▲ ページ上部へ</a></p>
+<ul class="subcontents">
+  <li><a href="https://sigotora.jp/">オープンループパートナーズ求人情報TOP</a></li>
+  <li><a href="https://www.olp.co.jp/company/" target="_blank">会社概要</a></li>
+  <li><a href="https://www.olp.co.jp/privacy/policy.html" target="_blank">個人情報保護方針 </a></li>
+  <li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=230">お問い合わせ</a></li>
+  <li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=231">サイトマップ</a></li>
+</ul>
+</footer>
 
 ■サイドメニュー設定
 -   OFFにする
@@ -25,7 +38,6 @@
 ■案件詳細（画像なし）
 -   モーダルより下をコピペ済
 
------------------------------------------------------------------------------
 [レイアウト設定](https://sigotora.jp/aspadmnt/index.cfm?fuseaction=layoutset.list)
 
 ※元々の設定
@@ -43,7 +55,7 @@
 -   フリーエリア№6にデータあり
 -   レイアウト設定に配置
 
------------------------------------------------------------------------------
+■
 
 残りの作業
 -   応募ページ（既存ページ）のCSS調整
