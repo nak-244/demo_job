@@ -18,6 +18,8 @@
 
 ■フッター設定
 * 下記内容に変更
+
+```html:フッター
 <footer>
 <p id="page-top"><a href="#">▲ ページ上部へ</a></p>
 <ul class="subcontents">
@@ -28,7 +30,7 @@
   <li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&cid=231">サイトマップ</a></li>
 </ul>
 </footer>
-
+```
 ■サイドメニュー設定
 -   OFFにする
 
