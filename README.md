@@ -31,6 +31,23 @@
 </ul>
 </footer>
 ```
+#### 元々の記述
+```html:フッター
+<footer>
+<p id="page-top"><a href="#">▲ ページ上部へ</a></p>
+
+<ul class="subcontents">
+	<li><a href="https://sigotora.jp/">オープンループパートナーズ求人情報TOP</a></li>
+	<li><a href="http://www.olp.co.jp/" target="_blank">会社概要</a></li>
+	<li><a href="https://www.olp.co.jp/privacy/policy.html" target="_blank">個人情報保護方針 </a></li>
+	<li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.inquiries">お問い合わせ</a></li>
+	<li><a href="https://sigotora.jp/index.cfm?fuseaction=contents.sitemap">サイトマップ</a></li>
+</ul>
+</footer>
+
+```
+
+
 ■サイドメニュー設定
 -   OFFにする
 
