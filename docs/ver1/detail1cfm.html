@@ -109,7 +109,7 @@
         <div class="col-md-12 px-0">
           <p class="text-right"><span class="badge badge-info">No.%%sgtno%%</span></p>
           <div class="card">
-            <div class="card-header bg-primary rounded-0 h5">%%main_catch%%</div>
+            <div class="card-header bg-primary rounded-0 h5"> %%main_catch%% </div>
             <div class="card-body bg-white border border-info" style="">
               <div class="row px-3 align-items-center mt-1 border">
                 <div class="text-center p-3 col-sm-12 col-md-8">
@@ -122,7 +122,7 @@
               <p class="lead my-3"><i class="fa fa-circle-o text-primary" aria-hidden="true">&nbsp;</i>&nbsp;求人内容</p>
               <div class="row">
                 <div class="col-md-12 pb-3">
-                  <table class="table tbl-r02 border-bottom mb-5">
+                  <table class="table tbl-r02 border-bottom mb-2">
                     <tbody>
                       <tr>
                         <th>
@@ -153,7 +153,7 @@
                           <p class="my-1">給与</p>
                         </th>
                         <td>
-                          <p class="my-1"><span class="badge badge-secondary">時給</span>&nbsp;%%hourly_pay%%&nbsp;<span class="badge badge-success">月収</span>&nbsp;%%monthly_pay%%&nbsp;<span class="badge badge-dark">日給</span>&nbsp;%%daily_pay%%</p>
+                          <p class="my-1"><span class="badge badge-secondary">時給</span>&nbsp;%%hourly_pay%%&nbsp;<span class="badge badge-success">月収</span>&nbsp;%%monthly_pay%%&nbsp;<span class="badge badge-dark">日給&nbsp;%%daily_pay%%</span></p>
                         </td>
                       </tr>
                       <tr>
@@ -238,33 +238,12 @@
                           <p class="my-1">%%free_space_19%%</p>
                         </td>
                       </tr>
-                    </tbody>
-                  </table>
-                  <p class="lead my-3"><i class="fa fa-circle-o text-primary" aria-hidden="true">&nbsp;</i>&nbsp;担当オフィス</p>
-                  <table class="table mt-3 tbl-r02 border-bottom">
-                    <tbody>
                       <tr>
                         <th>
-                          <p class="my-1">応募先企業</p>
+                          <p class="my-1">担当オフィス</p>
                         </th>
                         <td>
                           <p class="my-1">%%free_space_7%%</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>
-                          <p class="my-1">応募連絡先</p>
-                        </th>
-                        <td>
-                          <p class="my-1">採用担当</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>
-                          <p class="my-1">お問い合わせ先</p>
-                        </th>
-                        <td>
-                          <p class="my-1">%%free_space_10%%</p>
                         </td>
                       </tr>
                     </tbody>
@@ -295,16 +274,13 @@
       <div class="container-fluid">
         <div class="row" style="">
           <div class="d-flex justify-content-center align-items-start col-12 my-1 text-primary oubobtn">
-            <div class="shiny-btn2 py-3 d-flex flex-column align-items-center">
-              <a href="https://sigotora.jp/index.cfm?fuseaction=job.oubo&amp;sgtno=poo0431%2D01" class="">応募する</a>
-            </div>
+            <div class="shiny-btn2 py-3 d-flex flex-column align-items-center"> %%oubo_link%% </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- //spフッター -->
-  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
